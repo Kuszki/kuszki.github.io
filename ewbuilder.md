@@ -4,7 +4,7 @@ Tworzenie obiektów i pozyskiwanie atrybutów z elementów warstw programu EW-Ma
 ### Tworzenie obiektów liniowych
 Możliwość tworzenia obiektów liniowych poprzez łączenie sąsiadujących elementów liniowych. Atrybuty dla obiektu pozyskiwane są na podstawie treści etykiety znajdującej się w pobliżu elementów. Segmentacja obiektu następuje w chwili zmiany treści etykiety, w punkcie styku więcej niż dwóch linii oraz opcjonalnie w chwili zmiany operatu elementu liniowego. Dla obiektu przypisywany jest operat tworzących go segmentów.
 
-Utworzone obiekty liniowe będą posiadały atrybuty pozyskane z treści etykiet - nie jest jednak możliwe w pełni poprawne ustalenie części atrybutów (np. funkcji przewodu). Po naniesieniu poprawek, wynikających z analizy operatów, istnieje możliwość przeprowadzenia dodatkowych operacji, takich jak redukcja nadmiernej segmentacji, generacji etykiet, segmentacja obiektów i innych w ramach możliwości programu [EW-Database](ewdatabase.md).
+Utworzone obiekty liniowe będą posiadały atrybuty pozyskane z treści etykiet - nie jest jednak możliwe w pełni poprawne ustalenie części atrybutów (np. funkcji przewodu). Po naniesieniu poprawek, wynikających z analizy operatów, istnieje możliwość przeprowadzenia dodatkowych operacji, takich jak redukcja nadmiernej segmentacji, generacji etykiet, segmentacja obiektów i innych w ramach możliwości programu [EW-Database](ewdatabase).
 
 W przypadku sieci napowietrznych, które zostały naniesione za pomocą symboli, istnieje możliwość utworzenia elementów liniowych poprzez dopasowanie par symboli spełniających kryteria dopuszczalnej odległości oraz dopuszczalnej różnicy kąta obrotu. Istnieje także możliwość utworzenia listy niedopasowanych symboli.
 
@@ -34,7 +34,7 @@ Aby poprawnie pozyskać informacje dotyczące sposobu pozyskania danych należy 
 ### Dodatkowe operacje
 Utworzenie obiektów jest pierwszym krokiem podczas tworzenia opracowania bazy danych. Zwykle konieczna jest także analiza operatów, w wyniku której pozyskiwane są brakujące atrybuty i korygowane ewentualne błędy. Często zdarza się, że operator podczas kartowania wprowadza dane na złych warstwach, czy też stosuje niepoprawny symbol dla obiektu. Część z tych błędów może zostać wychwycona - część jednak wymaga analizy danych źródłowych.
 
-Po wykonaniu analizy operatów baza danych wymaga wielu operacji takich jak usunięcie nadmiernej segmentacji, utworzenie relacji pomiędzy obiektami, przypisanie poprawnych dat pomiaru itd.. Możliwości te oferuje narzędzie [EW-Database](ewdatabase.md).
+Po wykonaniu analizy operatów baza danych wymaga wielu operacji takich jak usunięcie nadmiernej segmentacji, utworzenie relacji pomiędzy obiektami, przypisanie poprawnych dat pomiaru itd.. Możliwości te oferuje narzędzie [EW-Database](ewdatabase).
 
 ### Sygnalizowanie błędów
 Duża część ewentualnych błędów może zostać wychwycona i przekazana w formie list. Poprawa tych błędów wymaga analizy operatów - ich automatyczna naprawa może nie być trafna, co powodowało by poważnie konsekwencje. Listy dotyczą zarówno obiektów z podejrzeniem wystąpienia błędu, jak i miejsc w opracowaniu, w których istnieje prawdopodobieństwo błędu (np. fragment sieci gazowej skartowany jako sieć wysokiego ciśnienia opisany w etykiecie jako sieć niskiego ciśnienia).
