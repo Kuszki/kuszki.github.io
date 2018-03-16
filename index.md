@@ -33,3 +33,8 @@ Program umożliwiający tworzenie wykresów i analizę częstotliwościową wyge
 - Algorytmy sterowania wykorzystujące logikę rozmytą.
 - Programowanie urządzeń mikroprocesoroywch.
 - Cyfrowe przetwarzanie sygnałów.
+
+# Prezentacje projektów
+
+- [EW-Database](ewdatabase)
+- [EW-Builder](ewbuilder)
