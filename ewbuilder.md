@@ -35,3 +35,6 @@ Aby poprawnie pozyskać informacje dotyczące sposobu pozyskania danych należy 
 Utworzenie obiektów jest pierwszym krokiem podczas tworzenia opracowania bazy danych. Zwykle konieczna jest także analiza operatów, w wyniku której pozyskiwane są brakujące atrybuty i korygowane ewentualne błędy. Często zdarza się, że operator podczas kartowania wprowadza dane na złych warstwach, czy też stosuje niepoprawny symbol dla obiektu. Część z tych błędów może zostać wychwycona - część jednak wymaga analizy danych źródłowych.
 
 Po wykonaniu analizy operatów baza danych wymaga wielu operacji takich jak usunięcie nadmiernej segmentacji, utworzenie relacji pomiędzy obiektami, przypisanie poprawnych dat pomiaru itd.. Możliwości te oferuje narzędzie [EW-Database](ewdatabase.md).
+
+### Sygnalizowanie błędów
+Duża część ewentualnych błędów może zostać wychwycona i przekazana w formie list. Poprawa tych błędów wymaga analizy operatów - ich automatyczna naprawa może nie być trafna, co powodowało by poważnie konsekwencje. Listy dotyczą zarówno obiektów z podejrzeniem wystąpienia błędu, jak i miejsc w opracowaniu, w których istnieje prawdopodobieństwo błędu (np. fragment sieci gazowej skartowany jako sieć wysokiego ciśnienia opisany w etykiecie jako sieć niskiego ciśnienia).
