@@ -8,6 +8,9 @@ Pokój 31A, lukasz.drozdz@polsl.pl
 
 # Aktualnie rozwijane projekty
 
+### [K-ESP-CTRL](https://github.com/Kuszki/K-ESP-CTRL)
+Sterownik do kotłów gazowych z interfejsem WWW i rozproszonym systemem pomiarowym.
+
 ### [EW-Database](https://github.com/kuszki/EW-Database)
 Zaawansowana obsługa baz danych programu EW-Mapa.
 
@@ -33,6 +36,7 @@ Program umożliwiający tworzenie wykresów i analizę częstotliwościową wyge
 - Algorytmy sterowania wykorzystujące logikę rozmytą.
 - Programowanie urządzeń mikroprocesoroywch.
 - Cyfrowe przetwarzanie sygnałów.
+- Automatyka i algorytmy sterowania.
 
 # Prezentacje projektów
 
