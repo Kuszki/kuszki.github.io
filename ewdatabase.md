@@ -36,3 +36,10 @@ Dodatkowo możliwe jest zastąpienie operatu elementów obiektu operatem przypis
 
 ### Tworzenie listy możliwych błędów
 Istnieje możliwość przeprowadzania zaawansowanych analiz geometrycznych i logicznych dla istniejących obiektów. W przypadku podejrzenia wystąpienia błędu (np. wstawienie kilku punktów wysokościowych w jednym miejscu, pozyskanie zbyt długiego segmentu linii napowietrznej niskiego napięcia itd.) istnieje możliwość wygenerowania listy obiektów, w których kartowaniu prawdopodobnie  popełniono błąd.
+
+## Interfejs
+
+![Interfejs](ewdatabase/interfejs.png)
+![Edycja](ewdatabase/edycja.png)
+![Filtr](ewdatabase/filtr.png)
+![Redakcja](ewdatabase/redakcja.png)

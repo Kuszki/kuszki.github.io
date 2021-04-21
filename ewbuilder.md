@@ -38,3 +38,7 @@ Po wykonaniu analizy operatów baza danych wymaga wielu operacji takich jak usun
 
 ### Sygnalizowanie błędów
 Duża część ewentualnych błędów może zostać wychwycona i przekazana w formie list. Poprawa tych błędów wymaga analizy operatów - ich automatyczna naprawa może nie być trafna, co powodowało by poważnie konsekwencje. Listy dotyczą zarówno obiektów z podejrzeniem wystąpienia błędu, jak i miejsc w opracowaniu, w których istnieje prawdopodobieństwo błędu (np. fragment sieci gazowej skartowany jako sieć wysokiego ciśnienia opisany w etykiecie jako sieć niskiego ciśnienia).
+
+## Interfejs
+
+![Interfejs](ewbuilder/interfejs.png)
