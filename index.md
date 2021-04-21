@@ -40,5 +40,6 @@ Program umożliwiający tworzenie wykresów i analizę częstotliwościową wyge
 
 # Prezentacje projektów
 
-- [EW-Database](ewdatabase)
-- [EW-Builder](ewbuilder)
+- [EW-Database](ewdatabase.md)
+- [EW-Builder](ewbuilder.md)
+- [K-ESP-CTRL](kespctrl.md)
