@@ -1,4 +1,4 @@
-# Mgr inż. Łukasz Dróżdż
+# [Mgr inż. Łukasz Dróżdż](https://github.com/Kuszki)
 
 Politechnika Śląska Wydział Elektryczny
 
@@ -6,7 +6,7 @@ Katedra Metrologii, Elektroniki i Automatyki
 
 Pokój 31A, lukasz.drozdz@polsl.pl
 
-# Aktualnie rozwijane projekty
+# [Aktualnie rozwijane projekty](https://github.com/Kuszki?tab=repositories)
 
 ### [K-ESP-CTRL](https://github.com/Kuszki/K-ESP-CTRL)
 Sterownik do kotłów gazowych z interfejsem WWW i rozproszonym systemem pomiarowym.
