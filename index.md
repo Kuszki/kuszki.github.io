@@ -4,7 +4,7 @@ Politechnika Śląska Wydział Elektryczny
 
 Katedra Metrologii, Elektroniki i Automatyki
 
-Pokój 31A, lukasz.drozdz@polsl.pl
+Pokój 109c, lukasz.drozdz@polsl.pl
 
 # [Aktualnie rozwijane projekty](https://github.com/Kuszki?tab=repositories)
 
@@ -22,6 +22,9 @@ Układ mikroprocesorowy wraz ze środowiskiem, umożliwiające rejestracje i prz
 
 ### [AVR-UPMP-Demo](https://github.com/kuszki/AVR-UPMP-Demo)
 Przykładowa implementacja obsługi wybranych funkcjonalności układu mikroprocesorowego omawianego w ramach zajęć z przedmiotu Uruchamianie Przyrządów Mikroprocesorowych.
+
+### [TPK-Example](https://github.com/Kuszki/TPK-Example)
+Przykładowa implementacja projektu umożliwiającego transfer plików pomiędzy klientem a serwerem. Przykład stworzony na potrzeby przedmiotu Programowanie w Środowisku Sieciowym.
 
 ### [KLLibs](https://github.com/kuszki/KLLibs)
 Zestaw bibliotek oraz lekki język skryptowy zoptymalizowane do uruchomienia na mikrokontrolerach rodziny AVR.
@@ -43,3 +46,4 @@ Program umożliwiający tworzenie wykresów i analizę częstotliwościową wyge
 - [EW-Database](ewdatabase.md)
 - [EW-Builder](ewbuilder.md)
 - [K-ESP-CTRL](kespctrl.md)
+- [TPK-Example](tpkexample)
