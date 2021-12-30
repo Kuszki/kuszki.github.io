@@ -1,0 +1,8 @@
+<map id="SERVER::on_disconnect" name="SERVER::on_disconnect">
+<area shape="rect" id="node1" title="Obsługa rozłączenia klienta." alt="" coords="480,54,655,81"/>
+<area shape="rect" id="node2" href="$class_s_e_r_v_e_r.html#ae5390a25208f81c139a73747374a02bf" title="Pętla serwera." alt="" coords="108,54,217,81"/>
+<area shape="rect" id="node4" href="$class_s_e_r_v_e_r.html#aa64b01a309342860852be03efc4326eb" title="Obsługa pobierania pliku." alt="" coords="265,29,432,56"/>
+<area shape="rect" id="node5" href="$class_s_e_r_v_e_r.html#a99e0fdba8985163f446b50a4ce8211b1" title="Obsługa nagłówka." alt="" coords="274,80,423,106"/>
+<area shape="rect" id="node6" href="$class_s_e_r_v_e_r.html#acaf6a69143611b6467a236da1f56905f" title="Obsługa wysyłania pliku." alt="" coords="275,130,423,157"/>
+<area shape="rect" id="node3" href="$main__s_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Funkcja główna programu serwera." alt="" coords="5,54,60,81"/>
+</map>

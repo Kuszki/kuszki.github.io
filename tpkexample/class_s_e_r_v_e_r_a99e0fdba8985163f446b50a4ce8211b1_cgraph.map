@@ -1,0 +1,5 @@
+<map id="SERVER::on_header" name="SERVER::on_header">
+<area shape="rect" id="node1" title="Obsługa nagłówka." alt="" coords="5,5,155,32"/>
+<area shape="rect" id="node2" href="$class_s_e_r_v_e_r.html#ac73fc3f88eef2b1f8eabdb1a2b33a99b" title="Obsługa rozłączenia klienta." alt="" coords="203,5,377,32"/>
+<area shape="rect" id="node3" href="$class_s_o_c_k_b_a_s_e.html#a1bed341ace5336a5cfa1683929a3f497" title="Pobranie nazwy hosta." alt="" coords="425,5,591,32"/>
+</map>

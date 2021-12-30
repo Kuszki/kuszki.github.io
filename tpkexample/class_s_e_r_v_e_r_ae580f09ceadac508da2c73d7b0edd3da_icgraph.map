@@ -1,0 +1,5 @@
+<map id="SERVER::end" name="SERVER::end">
+<area shape="rect" id="node1" title="Zatrzymuje serwer." alt="" coords="227,5,332,32"/>
+<area shape="rect" id="node2" href="$main__s_8cpp.html#a08c3b0d52d0d97a0c49f13f40d2c5653" title="Funkcja obsługująca sygnały." alt="" coords="108,5,179,32"/>
+<area shape="rect" id="node3" href="$main__s_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Funkcja główna programu serwera." alt="" coords="5,5,60,32"/>
+</map>

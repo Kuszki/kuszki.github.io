@@ -1,0 +1,5 @@
+<map id="Graficzna hierarchia klas" name="Graficzna hierarchia klas">
+<area shape="rect" id="node1" href="$class_s_o_c_k_b_a_s_e.html" title="Klasa bazowa." alt="" coords="5,31,97,57"/>
+<area shape="rect" id="node2" href="$class_c_l_i_e_n_t.html" title="Klasa klienta." alt="" coords="148,5,216,32"/>
+<area shape="rect" id="node3" href="$class_s_e_r_v_e_r.html" title="Klasa serwera." alt="" coords="145,56,219,83"/>
+</map>

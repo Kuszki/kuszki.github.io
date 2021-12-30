@@ -1,0 +1,5 @@
+<map id="CLIENT::connect" name="CLIENT::connect">
+<area shape="rect" id="node1" title="Inicjacja połaczenia." alt="" coords="5,5,132,32"/>
+<area shape="rect" id="node2" href="$class_s_o_c_k_b_a_s_e.html#a188bbebe9b3f5ec16b0304b512da7c0f" title="Zamyka gniazdo." alt="" coords="373,5,508,32"/>
+<area shape="rect" id="node3" href="$class_c_l_i_e_n_t.html#a13a0cbc78ae543e0f6965a9c896b9562" title="Zamyka połączenie." alt="" coords="180,31,325,57"/>
+</map>

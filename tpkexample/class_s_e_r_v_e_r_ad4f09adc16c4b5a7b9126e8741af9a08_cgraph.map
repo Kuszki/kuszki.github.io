@@ -1,0 +1,4 @@
+<map id="SERVER::stop" name="SERVER::stop">
+<area shape="rect" id="node1" title="Zatrzymuje serwer." alt="" coords="5,5,115,32"/>
+<area shape="rect" id="node2" href="$class_s_o_c_k_b_a_s_e.html#a188bbebe9b3f5ec16b0304b512da7c0f" title="Zamyka gniazdo." alt="" coords="163,5,297,32"/>
+</map>

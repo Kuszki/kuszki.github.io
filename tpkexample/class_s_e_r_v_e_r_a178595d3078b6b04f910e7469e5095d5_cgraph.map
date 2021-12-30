@@ -1,0 +1,5 @@
+<map id="SERVER::start" name="SERVER::start">
+<area shape="rect" id="node1" title="Inicjacja serwera." alt="" coords="5,5,116,32"/>
+<area shape="rect" id="node2" href="$class_s_e_r_v_e_r.html#ad4f09adc16c4b5a7b9126e8741af9a08" title="Zatrzymuje serwer." alt="" coords="164,5,273,32"/>
+<area shape="rect" id="node3" href="$class_s_o_c_k_b_a_s_e.html#a188bbebe9b3f5ec16b0304b512da7c0f" title="Zamyka gniazdo." alt="" coords="321,5,456,32"/>
+</map>

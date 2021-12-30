@@ -1,0 +1,9 @@
+<map id="SOCKBASE::send_all" name="SOCKBASE::send_all">
+<area shape="rect" id="node1" title="Wysyłanie danych." alt="" coords="480,56,635,83"/>
+<area shape="rect" id="node2" href="$class_c_l_i_e_n_t.html#ad348ac551652139ec10b8598f72527c1" title="Pobieranie pliku." alt="" coords="279,5,418,32"/>
+<area shape="rect" id="node4" href="$class_s_e_r_v_e_r.html#aa64b01a309342860852be03efc4326eb" title="Obsługa pobierania pliku." alt="" coords="265,107,432,133"/>
+<area shape="rect" id="node7" href="$class_c_l_i_e_n_t.html#a83c83556e186942b8d9c8b812a295454" title="Wysyłanie pliku." alt="" coords="289,56,408,83"/>
+<area shape="rect" id="node3" href="$main__c_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Funkcja główna programu klienta." alt="" coords="135,31,190,57"/>
+<area shape="rect" id="node5" href="$class_s_e_r_v_e_r.html#ae5390a25208f81c139a73747374a02bf" title="Pętla serwera." alt="" coords="108,107,217,133"/>
+<area shape="rect" id="node6" href="$main__s_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Funkcja główna programu serwera." alt="" coords="5,107,60,133"/>
+</map>

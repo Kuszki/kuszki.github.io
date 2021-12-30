@@ -1,0 +1,6 @@
+<map id="SERVER::on_download" name="SERVER::on_download">
+<area shape="rect" id="node1" title="Obsługa pobierania pliku." alt="" coords="5,31,172,57"/>
+<area shape="rect" id="node2" href="$class_s_e_r_v_e_r.html#ac73fc3f88eef2b1f8eabdb1a2b33a99b" title="Obsługa rozłączenia klienta." alt="" coords="220,5,395,32"/>
+<area shape="rect" id="node4" href="$class_s_o_c_k_b_a_s_e.html#aefa554c9927511c17d7319e0c9a73291" title="Wysyłanie danych." alt="" coords="230,56,385,83"/>
+<area shape="rect" id="node3" href="$class_s_o_c_k_b_a_s_e.html#a1bed341ace5336a5cfa1683929a3f497" title="Pobranie nazwy hosta." alt="" coords="443,5,608,32"/>
+</map>
