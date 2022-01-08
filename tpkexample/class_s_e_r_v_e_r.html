@@ -407,7 +407,7 @@ Dodatkowe Dziedziczone Składowe</h2></td></tr>
 <div class="ttc" id="aclass_s_e_r_v_e_r_html_a99e0fdba8985163f446b50a4ce8211b1"><div class="ttname"><a href="class_s_e_r_v_e_r.html#a99e0fdba8985163f446b50a4ce8211b1">SERVER::on_header</a></div><div class="ttdeci">iterator on_header(iterator it)</div><div class="ttdoc">Obsługa nagłówka.</div><div class="ttdef"><b>Definition:</b> <a href="server_8cpp_source.html#l00192">server.cpp:192</a></div></div>
 <div class="ttc" id="aclass_s_e_r_v_e_r_html_aa64b01a309342860852be03efc4326eb"><div class="ttname"><a href="class_s_e_r_v_e_r.html#aa64b01a309342860852be03efc4326eb">SERVER::on_download</a></div><div class="ttdeci">iterator on_download(iterator it)</div><div class="ttdoc">Obsługa pobierania pliku.</div><div class="ttdef"><b>Definition:</b> <a href="server_8cpp_source.html#l00297">server.cpp:297</a></div></div>
 <div class="ttc" id="aclass_s_e_r_v_e_r_html_aa64d19c0d8277395ab290fab932ba202"><div class="ttname"><a href="class_s_e_r_v_e_r.html#aa64d19c0d8277395ab290fab932ba202">SERVER::on_accept</a></div><div class="ttdeci">void on_accept(int sock)</div><div class="ttdoc">Obsługa nowego połączenia.</div><div class="ttdef"><b>Definition:</b> <a href="server_8cpp_source.html#l00183">server.cpp:183</a></div></div>
-<div class="ttc" id="aclass_s_e_r_v_e_r_html_ac73fc3f88eef2b1f8eabdb1a2b33a99b"><div class="ttname"><a href="class_s_e_r_v_e_r.html#ac73fc3f88eef2b1f8eabdb1a2b33a99b">SERVER::on_disconnect</a></div><div class="ttdeci">iterator on_disconnect(iterator it)</div><div class="ttdoc">Obsługa rozłączenia klienta.</div><div class="ttdef"><b>Definition:</b> <a href="server_8cpp_source.html#l00328">server.cpp:328</a></div></div>
+<div class="ttc" id="aclass_s_e_r_v_e_r_html_ac73fc3f88eef2b1f8eabdb1a2b33a99b"><div class="ttname"><a href="class_s_e_r_v_e_r.html#ac73fc3f88eef2b1f8eabdb1a2b33a99b">SERVER::on_disconnect</a></div><div class="ttdeci">iterator on_disconnect(iterator it)</div><div class="ttdoc">Obsługa rozłączenia klienta.</div><div class="ttdef"><b>Definition:</b> <a href="server_8cpp_source.html#l00333">server.cpp:333</a></div></div>
 <div class="ttc" id="aclass_s_e_r_v_e_r_html_acaf6a69143611b6467a236da1f56905f"><div class="ttname"><a href="class_s_e_r_v_e_r.html#acaf6a69143611b6467a236da1f56905f">SERVER::on_upload</a></div><div class="ttdeci">iterator on_upload(iterator it)</div><div class="ttdoc">Obsługa wysyłania pliku.</div><div class="ttdef"><b>Definition:</b> <a href="server_8cpp_source.html#l00280">server.cpp:280</a></div></div>
 <div class="ttc" id="aclass_s_e_r_v_e_r_html_af77948a123a565b9c6d0a660b35e5ca1a3f1c5b0049a9751e6f5f9e702b74a0dd"><div class="ttname"><a href="class_s_e_r_v_e_r.html#af77948a123a565b9c6d0a660b35e5ca1a3f1c5b0049a9751e6f5f9e702b74a0dd">SERVER::STATE::Uploading</a></div><div class="ttdeci">@ Uploading</div><div class="ttdoc">Odbieranie danych z klienta.</div></div>
 <div class="ttc" id="aclass_s_e_r_v_e_r_html_af77948a123a565b9c6d0a660b35e5ca1a5706de961fb376d701be6e7762d8b09c"><div class="ttname"><a href="class_s_e_r_v_e_r.html#af77948a123a565b9c6d0a660b35e5ca1a5706de961fb376d701be6e7762d8b09c">SERVER::STATE::Waiting</a></div><div class="ttdeci">@ Waiting</div><div class="ttdoc">Oczekiwanie na nagłówek.</div></div>
@@ -528,18 +528,18 @@ Dodatkowe Dziedziczone Składowe</h2></td></tr>
 </dl>
 <p>Zamyka połaczenie i zwalnia związane z nim zasoby. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="server_8cpp_source.html#l00328">328</a> pliku <a class="el" href="server_8cpp_source.html">server.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;{</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;     cout &lt;&lt; <span class="stringliteral">&quot;Disconnecting client:\t&quot;</span> &lt;&lt; it-&gt;fd &lt;&lt; <span class="charliteral">&#39;\t&#39;</span></div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;          &lt;&lt; <span class="charliteral">&#39;(&#39;</span> &lt;&lt; <a class="code" href="class_s_o_c_k_b_a_s_e.html#a1bed341ace5336a5cfa1683929a3f497">get_name</a>(it-&gt;fd) &lt;&lt; <span class="charliteral">&#39;)&#39;</span> &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160; </div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;     <span class="comment">// Usuń obiekt klienta z mapy</span></div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;     <a class="code" href="class_s_e_r_v_e_r.html#a4d48ea201da368148d87dc751cf2fa38">m_clients</a>.erase(it-&gt;fd);</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160; </div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;     <span class="comment">// Usuń klienta z listy `poll` oraz</span></div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;     <span class="comment">// zwróć iterator na kolejne połączenie</span></div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;     <span class="keywordflow">return</span> <a class="code" href="class_s_e_r_v_e_r.html#a0b216f85293df0af1eddb0aff29256f0">m_sockets</a>.erase(it);</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;}</div>
+<p class="definition">Definicja w linii <a class="el" href="server_8cpp_source.html#l00333">333</a> pliku <a class="el" href="server_8cpp_source.html">server.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;{</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;     cout &lt;&lt; <span class="stringliteral">&quot;Disconnecting client:\t&quot;</span> &lt;&lt; it-&gt;fd &lt;&lt; <span class="charliteral">&#39;\t&#39;</span></div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;          &lt;&lt; <span class="charliteral">&#39;(&#39;</span> &lt;&lt; <a class="code" href="class_s_o_c_k_b_a_s_e.html#a1bed341ace5336a5cfa1683929a3f497">get_name</a>(it-&gt;fd) &lt;&lt; <span class="charliteral">&#39;)&#39;</span> &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160; </div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;     <span class="comment">// Usuń obiekt klienta z mapy</span></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;     <a class="code" href="class_s_e_r_v_e_r.html#a4d48ea201da368148d87dc751cf2fa38">m_clients</a>.erase(it-&gt;fd);</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160; </div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;     <span class="comment">// Usuń klienta z listy `poll` oraz</span></div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;     <span class="comment">// zwróć iterator na kolejne połączenie</span></div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;     <span class="keywordflow">return</span> <a class="code" href="class_s_e_r_v_e_r.html#a0b216f85293df0af1eddb0aff29256f0">m_sockets</a>.erase(it);</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;}</div>
 </div><!-- fragment --><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Oto graf wywołań dla tej funkcji:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -610,28 +610,32 @@ Dodatkowe Dziedziczone Składowe</h2></td></tr>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;          <span class="comment">// Pobierz odczytaną liczbę bajtów</span></div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;          <span class="keywordtype">int</span> rc = file.gcount();</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160; </div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;          cout &lt;&lt; <span class="charliteral">&#39;(&#39;</span> &lt;&lt; rc &lt;&lt; <span class="stringliteral">&quot; B&quot;</span> &lt;&lt; <span class="charliteral">&#39;)&#39;</span> &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160; </div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;          <span class="comment">// Gdy nie odczytano danych - zakończ połaczenie</span></div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;          <span class="keywordflow">if</span> (rc &lt;= 0) <span class="keywordflow">return</span> <a class="code" href="class_s_e_r_v_e_r.html#ac73fc3f88eef2b1f8eabdb1a2b33a99b">on_disconnect</a>(it);</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160; </div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;          <span class="comment">// Wyślij wszystkie odczytane dane</span></div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;          <span class="comment">// Zamknij połączenie w przypadku błędu</span></div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;          <span class="keywordflow">if</span> (<a class="code" href="class_s_o_c_k_b_a_s_e.html#aefa554c9927511c17d7319e0c9a73291">send_all</a>(it-&gt;fd, <a class="code" href="class_s_o_c_k_b_a_s_e.html#addfdbfb550704cb1f6e972ae04ff9fc1">m_buff</a>, rc));</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;          <span class="keywordflow">else</span> <span class="keywordflow">return</span> <a class="code" href="class_s_e_r_v_e_r.html#ac73fc3f88eef2b1f8eabdb1a2b33a99b">on_disconnect</a>(it);</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;     }</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;     <span class="keywordflow">else</span> <span class="keywordflow">return</span> <a class="code" href="class_s_e_r_v_e_r.html#ac73fc3f88eef2b1f8eabdb1a2b33a99b">on_disconnect</a>(it); <span class="comment">// Zamknij połaczenie</span></div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160; </div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;     <span class="keywordflow">return</span> ++it; <span class="comment">// Zwróć iterator na kolejne połączenie</span></div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;}</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;          <span class="comment">// Gdy nie odczytano danych - zakończ połaczenie</span></div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;          <span class="keywordflow">if</span> (rc &lt;= 0) <span class="keywordflow">return</span> <a class="code" href="class_s_e_r_v_e_r.html#ac73fc3f88eef2b1f8eabdb1a2b33a99b">on_disconnect</a>(it);</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160; </div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;          <span class="comment">// Wyślij wszystkie odczytane dane</span></div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;          <span class="keywordtype">int</span> sd = ::send(it-&gt;fd, <a class="code" href="class_s_o_c_k_b_a_s_e.html#addfdbfb550704cb1f6e972ae04ff9fc1">m_buff</a>, rc, 0);</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160; </div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;          cout &lt;&lt; <span class="charliteral">&#39;(&#39;</span> &lt;&lt; sd &lt;&lt; <span class="charliteral">&#39;/&#39;</span> &lt;&lt; rc &lt;&lt; <span class="stringliteral">&quot; B&quot;</span> &lt;&lt; <span class="charliteral">&#39;)&#39;</span> &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160; </div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;          <span class="comment">// Sprawdź, czy udało się wysłać dane</span></div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;          <span class="keywordflow">if</span> (sd &lt;= 0) <span class="keywordflow">return</span> <a class="code" href="class_s_e_r_v_e_r.html#ac73fc3f88eef2b1f8eabdb1a2b33a99b">on_disconnect</a>(it);</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160; </div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;          <span class="comment">// W przypadku niepełnego wysyłania cofnij</span></div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;          <span class="comment">// wskaźnik pliku do prawidłowego miejsca</span></div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;          <span class="keywordflow">else</span> <span class="keywordflow">if</span> (sd &lt; rc) file.seekg(sd - rc, ios::cur);</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;     }</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;     <span class="keywordflow">else</span> <span class="keywordflow">return</span> <a class="code" href="class_s_e_r_v_e_r.html#ac73fc3f88eef2b1f8eabdb1a2b33a99b">on_disconnect</a>(it); <span class="comment">// Zamknij połaczenie</span></div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160; </div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;     <span class="keywordflow">return</span> ++it; <span class="comment">// Zwróć iterator na kolejne połączenie</span></div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;}</div>
 <div class="ttc" id="aclass_s_o_c_k_b_a_s_e_html_addfdbfb550704cb1f6e972ae04ff9fc1"><div class="ttname"><a href="class_s_o_c_k_b_a_s_e.html#addfdbfb550704cb1f6e972ae04ff9fc1">SOCKBASE::m_buff</a></div><div class="ttdeci">char m_buff[1024]</div><div class="ttdoc">Ogólny bufor na dane.</div><div class="ttdef"><b>Definition:</b> <a href="sockbase_8hpp_source.html#l00053">sockbase.hpp:53</a></div></div>
-<div class="ttc" id="aclass_s_o_c_k_b_a_s_e_html_aefa554c9927511c17d7319e0c9a73291"><div class="ttname"><a href="class_s_o_c_k_b_a_s_e.html#aefa554c9927511c17d7319e0c9a73291">SOCKBASE::send_all</a></div><div class="ttdeci">static bool send_all(int sock, const char *data, size_t size)</div><div class="ttdoc">Wysyłanie danych.</div><div class="ttdef"><b>Definition:</b> <a href="sockbase_8cpp_source.html#l00045">sockbase.cpp:45</a></div></div>
 </div><!-- fragment --><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Oto graf wywołań dla tej funkcji:</div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_s_e_r_v_e_r_aa64b01a309342860852be03efc4326eb_cgraph.svg" width="614" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_s_e_r_v_e_r_aa64b01a309342860852be03efc4326eb_cgraph.svg" width="614" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
