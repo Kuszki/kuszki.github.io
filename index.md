@@ -46,4 +46,13 @@ Program umożliwiający tworzenie wykresów i analizę częstotliwościową wyge
 - [EW-Database](ewdatabase.md)
 - [EW-Builder](ewbuilder.md)
 - [K-ESP-CTRL](kespctrl.md)
+
+# Projekty przykłady
 - [TPK-Example](tpkexample)
+- [SSL-Example](https://github.com/Kuszki/PWSS-SSL-Example)
+- [AVR-Example](https://github.com/Kuszki/UPMP-AVR-Example)
+- [RNG-Example](https://github.com/Kuszki/PI-Random-Example)
+- [CPP-Python-Example](https://github.com/Kuszki/PI-CPP-Python-Example)
+- [Roll-Example](https://github.com/Kuszki/PI-Roll-Example)
+- [Thread-Example](https://github.com/Kuszki/PI-Thread-Example)
+- [Fuzzy-Example](https://github.com/Kuszki/PI-Parallel-Fuzzy-Example)
