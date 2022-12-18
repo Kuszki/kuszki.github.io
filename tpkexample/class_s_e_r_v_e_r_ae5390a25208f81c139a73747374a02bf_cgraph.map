@@ -1,9 +1,9 @@
 <map id="SERVER::loop" name="SERVER::loop">
 <area shape="rect" id="node1" title="Pętla serwera." alt="" coords="5,81,115,108"/>
 <area shape="rect" id="node2" href="$class_s_e_r_v_e_r.html#aa64d19c0d8277395ab290fab932ba202" title="Obsługa nowego połączenia." alt="" coords="391,5,538,32"/>
-<area shape="rect" id="node4" href="$class_s_e_r_v_e_r.html#ac73fc3f88eef2b1f8eabdb1a2b33a99b" title="Obsługa rozłączenia klienta." alt="" coords="377,81,552,108"/>
-<area shape="rect" id="node5" href="$class_s_e_r_v_e_r.html#aa64b01a309342860852be03efc4326eb" title="Obsługa pobierania pliku." alt="" coords="163,81,329,108"/>
-<area shape="rect" id="node6" href="$class_s_e_r_v_e_r.html#a99e0fdba8985163f446b50a4ce8211b1" title="Obsługa nagłówka." alt="" coords="171,132,321,159"/>
-<area shape="rect" id="node7" href="$class_s_e_r_v_e_r.html#acaf6a69143611b6467a236da1f56905f" title="Obsługa wysyłania pliku." alt="" coords="172,183,320,209"/>
+<area shape="rect" id="node4" href="$class_s_e_r_v_e_r.html#ae95cc32343639f51220c1ebd5eb40722" title="Obsługa rozłączenia klienta." alt="" coords="377,81,552,108"/>
+<area shape="rect" id="node5" href="$class_s_e_r_v_e_r.html#a7e0fcd9b47fd1272527fd02c089cd1e2" title="Obsługa pobierania pliku." alt="" coords="163,81,329,108"/>
+<area shape="rect" id="node6" href="$class_s_e_r_v_e_r.html#a9472ce08aa1988b86f0eff95e5c1c431" title="Obsługa nagłówka." alt="" coords="171,132,321,159"/>
+<area shape="rect" id="node7" href="$class_s_e_r_v_e_r.html#ad2f806bd9b45db55531faea533288e61" title="Obsługa wysyłania pliku." alt="" coords="172,183,320,209"/>
 <area shape="rect" id="node3" href="$class_s_o_c_k_b_a_s_e.html#a1bed341ace5336a5cfa1683929a3f497" title="Pobranie nazwy hosta." alt="" coords="600,56,765,83"/>
 </map>

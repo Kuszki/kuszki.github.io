@@ -35,7 +35,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="class_s_e_r_v_e_r.html#ac73fc3f88eef2b1f8eabdb1a2b33a99b" target="_top" xlink:title="Obsługa rozłączenia klienta.">
+<g id="a_node5"><a xlink:href="class_s_e_r_v_e_r.html#ae95cc32343639f51220c1ebd5eb40722" target="_top" xlink:title="Obsługa rozłączenia klienta.">
 <polygon fill="none" stroke="black" points="356,-76.5 356,-95.5 487,-95.5 487,-76.5 356,-76.5"/>
 <text text-anchor="middle" x="421.5" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">SERVER::on_disconnect</text>
 </a>
@@ -86,7 +86,7 @@
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="class_s_e_r_v_e_r.html#aa64b01a309342860852be03efc4326eb" target="_top" xlink:title="Obsługa pobierania pliku.">
+<g id="a_node6"><a xlink:href="class_s_e_r_v_e_r.html#a7e0fcd9b47fd1272527fd02c089cd1e2" target="_top" xlink:title="Obsługa pobierania pliku.">
 <polygon fill="none" stroke="black" points="195,-76.5 195,-95.5 320,-95.5 320,-76.5 195,-76.5"/>
 <text text-anchor="middle" x="257.5" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">SERVER::on_download</text>
 </a>
@@ -101,7 +101,7 @@
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="class_s_e_r_v_e_r.html#a99e0fdba8985163f446b50a4ce8211b1" target="_top" xlink:title="Obsługa nagłówka.">
+<g id="a_node7"><a xlink:href="class_s_e_r_v_e_r.html#a9472ce08aa1988b86f0eff95e5c1c431" target="_top" xlink:title="Obsługa nagłówka.">
 <polygon fill="none" stroke="black" points="201.5,-38.5 201.5,-57.5 313.5,-57.5 313.5,-38.5 201.5,-38.5"/>
 <text text-anchor="middle" x="257.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">SERVER::on_header</text>
 </a>
@@ -116,7 +116,7 @@
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
-<g id="a_node8"><a xlink:href="class_s_e_r_v_e_r.html#acaf6a69143611b6467a236da1f56905f" target="_top" xlink:title="Obsługa wysyłania pliku.">
+<g id="a_node8"><a xlink:href="class_s_e_r_v_e_r.html#ad2f806bd9b45db55531faea533288e61" target="_top" xlink:title="Obsługa wysyłania pliku.">
 <polygon fill="none" stroke="black" points="202,-0.5 202,-19.5 313,-19.5 313,-0.5 202,-0.5"/>
 <text text-anchor="middle" x="257.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">SERVER::on_upload</text>
 </a>

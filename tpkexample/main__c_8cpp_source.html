@@ -2,8 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.9.1"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>TPK: Plik źródłowy main_c.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
@@ -19,10 +19,9 @@
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">TPK
-   &#160;<span id="projectnumber">1.0</span>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TPK<span id="projectnumber">&#160;1.0</span>
    </div>
    <div id="projectbrief">Przykładowy projekt wymiany plików</div>
   </td>
@@ -31,21 +30,22 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Wygenerowano przez Doxygen 1.9.1 -->
+<!-- Wygenerowano przez Doxygen 1.9.4 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Szukaj','.html');
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Szukaj','.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('',true,false,'search.php','Szukaj');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */</script>
+/* @license-end */
+</script>
 <div id="main-nav"></div>
 </div><!-- top -->
 <!-- window showing the filter options -->
@@ -63,153 +63,152 @@ $(function() {
 </div>
 
 <div class="header">
-  <div class="headertitle">
-<div class="title">main_c.cpp</div>  </div>
+  <div class="headertitle"><div class="title">main_c.cpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="main__c_8cpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *                                                                         *</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *  Simple file transfer project example                                   *</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *  Copyright (C) 2021  Łukasz &quot;Kuszki&quot; Dróżdż  lukasz.kuszki@gmail.com    *</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *                                                                         *</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *  This program is free software: you can redistribute it and/or modify   *</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> *  it under the terms of the GNU General Public License as published by   *</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *  the  Free Software Foundation, either  version 3 of the  License, or   *</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> *  (at your option) any later version.                                    *</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *                                                                         *</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> *  This  program  is  distributed  in the hope  that it will be useful,   *</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> *  but WITHOUT ANY  WARRANTY;  without  even  the  implied  warranty of   *</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *  MERCHANTABILITY  or  FITNESS  FOR  A  PARTICULAR  PURPOSE.  See  the   *</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> *  GNU General Public License for more details.                           *</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> *                                                                         *</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> *  You should have  received a copy  of the  GNU General Public License   *</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> *  along with this program. If not, see http://www.gnu.org/licenses/.     *</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> *                                                                         *</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="client_8hpp.html">client.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;argp.h&gt;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="main__c_8cpp.html#a62f73ea01c816f1996aed4c66f57c4fb">   34</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="main__c_8cpp.html#a62f73ea01c816f1996aed4c66f57c4fb">argp_program_version</a> = <span class="stringliteral">&quot;TPK Client 1.0&quot;</span>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="main__c_8cpp.html#aaa037e59f26a80a8a2e35e6f2364004d">   37</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="main__c_8cpp.html#aaa037e59f26a80a8a2e35e6f2364004d">argp_program_bug_address</a> = <span class="stringliteral">&quot;&lt;lukasz.drozdz@polsl.pl&gt;&quot;</span>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="main__c_8cpp.html#af6164deb8a824f8cb2b9147cfc3174f5">   40</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">char</span> <a class="code" href="main__c_8cpp.html#af6164deb8a824f8cb2b9147cfc3174f5">doc</a>[] = <span class="stringliteral">&quot;Client program for TPK project&quot;</span>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="main__c_8cpp.html#a91b08784b3668a8a1fbe2eec1947fb9d">   43</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">char</span> <a class="code" href="main__c_8cpp.html#a91b08784b3668a8a1fbe2eec1947fb9d">args_doc</a>[] = <span class="stringliteral">&quot;FILE [LOCALFILE]&quot;</span>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">static</span> <span class="keyword">struct </span>argp_option <a class="code" href="main__c_8cpp.html#abc1fd3a47aea6a8944038c9100eb9135">options</a>[] =</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;     { <span class="stringliteral">&quot;download&quot;</span>,  <span class="charliteral">&#39;d&#39;</span>, 0,        0, <span class="stringliteral">&quot;Download selected file&quot;</span> },</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;     { <span class="stringliteral">&quot;upload&quot;</span>,    <span class="charliteral">&#39;u&#39;</span>, 0,        0, <span class="stringliteral">&quot;Upload selected file&quot;</span> },</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;     { <span class="stringliteral">&quot;port&quot;</span>,      <span class="charliteral">&#39;p&#39;</span>, <span class="stringliteral">&quot;PORT&quot;</span>,   0, <span class="stringliteral">&quot;Select port number (default is 8080)&quot;</span> },</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;     { <span class="stringliteral">&quot;host&quot;</span>,      <span class="charliteral">&#39;h&#39;</span>, <span class="stringliteral">&quot;HOST&quot;</span>,   0, <span class="stringliteral">&quot;Select hostname (default is localhost)&quot;</span> },</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;     { 0 }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="structarguments.html">   62</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structarguments.html">arguments</a></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="structarguments.html#a9f2f4176075560e198de2f933ed0121a">   69</a></span>&#160;     <span class="keyword">enum</span> <a class="code" href="structarguments.html#a9f2f4176075560e198de2f933ed0121a">modeset</a></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;     {</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="structarguments.html#a9f2f4176075560e198de2f933ed0121aa28865934d0f86f336f2c0159053c3350">   71</a></span>&#160;          <a class="code" href="structarguments.html#a9f2f4176075560e198de2f933ed0121aa28865934d0f86f336f2c0159053c3350">unknown</a>, </div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="structarguments.html#a9f2f4176075560e198de2f933ed0121aa4978e0b82be6b180e2b84ef64169e24b">   72</a></span>&#160;          <a class="code" href="structarguments.html#a9f2f4176075560e198de2f933ed0121aa4978e0b82be6b180e2b84ef64169e24b">download</a>, </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;          <a class="code" href="structarguments.html#a9f2f4176075560e198de2f933ed0121aaab9693b2bc9774da30a218a900f0ba49">upload</a> </div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="structarguments.html#a9f2f4176075560e198de2f933ed0121aaab9693b2bc9774da30a218a900f0ba49">   74</a></span>&#160;     };</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="structarguments.html#a94fa589c9105e7055d4184646abe8ea8">   76</a></span>&#160;     <a class="code" href="structarguments.html#a9f2f4176075560e198de2f933ed0121a">modeset</a> <a class="code" href="structarguments.html#a94fa589c9105e7055d4184646abe8ea8">mode</a>; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="structarguments.html#a38a1fb4a3b8a012fb4fbf6c9fe5c000c">   78</a></span>&#160;     <span class="keywordtype">string</span> <a class="code" href="structarguments.html#a38a1fb4a3b8a012fb4fbf6c9fe5c000c">local</a>; </div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="structarguments.html#a5fd7bb10a3a495c358b143a8b01e7443">   79</a></span>&#160;     <span class="keywordtype">string</span> <a class="code" href="structarguments.html#a5fd7bb10a3a495c358b143a8b01e7443">file</a>; </div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="structarguments.html#a3ce4b8ecd3059ce872cd12f26f02b0ca">   80</a></span>&#160;     <span class="keywordtype">string</span> <a class="code" href="structarguments.html#a3ce4b8ecd3059ce872cd12f26f02b0ca">host</a>; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="structarguments.html#a8e1cda42f564407ae65785a10b54e6b6">   82</a></span>&#160;     uint16_t <a class="code" href="structarguments.html#a8e1cda42f564407ae65785a10b54e6b6">port</a>; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;};</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="main__c_8cpp.html#ab70c96531b1b652d70c221cfaf3207f3">   95</a></span>&#160;<span class="keyword">static</span> error_t <a class="code" href="main__c_8cpp.html#a61c89f0bcbd0d33d522365803af6a047">parse_opt</a>(<span class="keywordtype">int</span> key, <span class="keywordtype">char</span>* arg, argp_state* state)</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;{</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;     <span class="keyword">struct </span><a class="code" href="structarguments.html">arguments</a>* args = (<a class="code" href="structarguments.html">arguments</a>*) state-&gt;input;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;     switch (key)</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;     {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;          <span class="keywordflow">case</span> <span class="charliteral">&#39;p&#39;</span>:</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;               args-&gt;<a class="code" href="structarguments.html#a8e1cda42f564407ae65785a10b54e6b6">port</a> = atoi(arg);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;               <span class="keywordflow">if</span> (!args-&gt;<a class="code" href="structarguments.html#a8e1cda42f564407ae65785a10b54e6b6">port</a>) argp_usage(state);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;          <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;          <span class="keywordflow">case</span> <span class="charliteral">&#39;h&#39;</span>:</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;               args-&gt;<a class="code" href="structarguments.html#a3ce4b8ecd3059ce872cd12f26f02b0ca">host</a> = arg;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;               <span class="keywordflow">if</span> (args-&gt;<a class="code" href="structarguments.html#a3ce4b8ecd3059ce872cd12f26f02b0ca">host</a>.empty()) argp_usage(state);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;          <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;          <span class="keywordflow">case</span> <span class="charliteral">&#39;u&#39;</span>:</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;               <span class="keywordflow">if</span> (args-&gt;<a class="code" href="structarguments.html#a94fa589c9105e7055d4184646abe8ea8">mode</a> != <a class="code" href="structarguments.html#a9f2f4176075560e198de2f933ed0121aa28865934d0f86f336f2c0159053c3350">arguments::unknown</a>) argp_usage(state);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;               <span class="keywordflow">else</span> args-&gt;<a class="code" href="structarguments.html#a94fa589c9105e7055d4184646abe8ea8">mode</a> = <a class="code" href="structarguments.html#a9f2f4176075560e198de2f933ed0121aaab9693b2bc9774da30a218a900f0ba49">arguments::upload</a>;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;          <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;          <span class="keywordflow">case</span> <span class="charliteral">&#39;d&#39;</span>:</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;               <span class="keywordflow">if</span> (args-&gt;<a class="code" href="structarguments.html#a94fa589c9105e7055d4184646abe8ea8">mode</a> != <a class="code" href="structarguments.html#a9f2f4176075560e198de2f933ed0121aa28865934d0f86f336f2c0159053c3350">arguments::unknown</a>) argp_usage(state);</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;               <span class="keywordflow">else</span> args-&gt;<a class="code" href="structarguments.html#a94fa589c9105e7055d4184646abe8ea8">mode</a> = <a class="code" href="structarguments.html#a9f2f4176075560e198de2f933ed0121aa4978e0b82be6b180e2b84ef64169e24b">arguments::download</a>;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;          <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;          <span class="keywordflow">case</span> ARGP_KEY_ARG:</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;               <span class="keywordflow">switch</span> (state-&gt;arg_num)</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;               {</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                    <span class="keywordflow">case</span> 0:</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                         args-&gt;<a class="code" href="structarguments.html#a5fd7bb10a3a495c358b143a8b01e7443">file</a> = arg;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                    <span class="keywordflow">case</span> 1:</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                         args-&gt;<a class="code" href="structarguments.html#a38a1fb4a3b8a012fb4fbf6c9fe5c000c">local</a> = arg;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                    <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                         argp_usage(state);</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;               }</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;          <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;          <span class="keywordflow">case</span> ARGP_KEY_END:</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;               <span class="keywordflow">if</span> (state-&gt;arg_num &lt; 1 || args-&gt;<a class="code" href="structarguments.html#a5fd7bb10a3a495c358b143a8b01e7443">file</a>.empty() ||</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                   args-&gt;<a class="code" href="structarguments.html#a94fa589c9105e7055d4184646abe8ea8">mode</a> == <a class="code" href="structarguments.html#a9f2f4176075560e198de2f933ed0121aa28865934d0f86f336f2c0159053c3350">arguments::unknown</a>) argp_usage(state);</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;               <span class="keywordflow">else</span> <span class="keywordflow">if</span> (args-&gt;<a class="code" href="structarguments.html#a38a1fb4a3b8a012fb4fbf6c9fe5c000c">local</a>.empty()) args-&gt;<a class="code" href="structarguments.html#a38a1fb4a3b8a012fb4fbf6c9fe5c000c">local</a> = args-&gt;<a class="code" href="structarguments.html#a5fd7bb10a3a495c358b143a8b01e7443">file</a>;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;          <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;          <span class="keywordflow">default</span>: <span class="keywordflow">return</span> ARGP_ERR_UNKNOWN;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;     }</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;     <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;}</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="keyword">static</span> <span class="keyword">struct </span><a class="code" href="main__c_8cpp.html#ab70c96531b1b652d70c221cfaf3207f3">argp</a> <a class="code" href="main__c_8cpp.html#ab70c96531b1b652d70c221cfaf3207f3">argp</a> = { <a class="code" href="main__c_8cpp.html#abc1fd3a47aea6a8944038c9100eb9135">options</a>, <a class="code" href="main__c_8cpp.html#a61c89f0bcbd0d33d522365803af6a047">parse_opt</a>, <a class="code" href="main__c_8cpp.html#a91b08784b3668a8a1fbe2eec1947fb9d">args_doc</a>, <a class="code" href="main__c_8cpp.html#af6164deb8a824f8cb2b9147cfc3174f5">doc</a> };</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
-<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="main__c_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">  155</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="main__c_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>* argv[])</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;{</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;     <span class="comment">// Wartości domyślne parametrów</span></div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;     <span class="keyword">struct </span><a class="code" href="structarguments.html">arguments</a> args =</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;     {</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;          .<a class="code" href="structarguments.html#a94fa589c9105e7055d4184646abe8ea8">mode</a> = <a class="code" href="structarguments.html#a9f2f4176075560e198de2f933ed0121aa28865934d0f86f336f2c0159053c3350">arguments::unknown</a>,</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;          .host = <span class="stringliteral">&quot;localhost&quot;</span>,</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;          .port = 8080</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;     };</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;     <span class="comment">// Przetwórz argumenty</span></div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;     argp_parse(&amp;<a class="code" href="main__c_8cpp.html#ab70c96531b1b652d70c221cfaf3207f3">argp</a>, argc, argv, 0, 0, &amp;args);</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;     <a class="code" href="class_c_l_i_e_n_t.html">CLIENT</a> cli; <span class="comment">// Utwórz klienta</span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;     <span class="comment">// Nawiąż połączenie i wykonaj akcję</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;     <span class="keywordflow">if</span> (cli.<a class="code" href="class_c_l_i_e_n_t.html#a783756fadeb1f24218acdee54bfb7b4a">connect</a>(args.<a class="code" href="structarguments.html#a3ce4b8ecd3059ce872cd12f26f02b0ca">host</a>, args.<a class="code" href="structarguments.html#a8e1cda42f564407ae65785a10b54e6b6">port</a>)) <span class="keywordflow">switch</span> (args.<a class="code" href="structarguments.html#a94fa589c9105e7055d4184646abe8ea8">mode</a>)</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;     {</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;          <span class="keywordflow">case</span> <a class="code" href="structarguments.html#a9f2f4176075560e198de2f933ed0121aa4978e0b82be6b180e2b84ef64169e24b">arguments::download</a>:</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;               cli.<a class="code" href="class_c_l_i_e_n_t.html#ad348ac551652139ec10b8598f72527c1">download</a>(args.<a class="code" href="structarguments.html#a5fd7bb10a3a495c358b143a8b01e7443">file</a>, args.<a class="code" href="structarguments.html#a38a1fb4a3b8a012fb4fbf6c9fe5c000c">local</a>);</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;          <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;          <span class="keywordflow">case</span> <a class="code" href="structarguments.html#a9f2f4176075560e198de2f933ed0121aaab9693b2bc9774da30a218a900f0ba49">arguments::upload</a>:</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;               cli.<a class="code" href="class_c_l_i_e_n_t.html#a83c83556e186942b8d9c8b812a295454">upload</a>(args.<a class="code" href="structarguments.html#a5fd7bb10a3a495c358b143a8b01e7443">file</a>, args.<a class="code" href="structarguments.html#a38a1fb4a3b8a012fb4fbf6c9fe5c000c">local</a>);</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;          <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;          <span class="keywordflow">default</span>: <span class="keywordflow">return</span> -2;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;     }</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;     <span class="keywordflow">else</span> <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;     <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;}</div>
+<a href="main__c_8cpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> *                                                                         *</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *  Simple file transfer project example                                   *</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> *  Copyright (C) 2021  Łukasz &quot;Kuszki&quot; Dróżdż  lukasz.kuszki@gmail.com    *</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> *                                                                         *</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> *  This program is free software: you can redistribute it and/or modify   *</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> *  it under the terms of the GNU General Public License as published by   *</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> *  the  Free Software Foundation, either  version 3 of the  License, or   *</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> *  (at your option) any later version.                                    *</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> *                                                                         *</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> *  This  program  is  distributed  in the hope  that it will be useful,   *</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> *  but WITHOUT ANY  WARRANTY;  without  even  the  implied  warranty of   *</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> *  MERCHANTABILITY  or  FITNESS  FOR  A  PARTICULAR  PURPOSE.  See  the   *</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> *  GNU General Public License for more details.                           *</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> *                                                                         *</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> *  You should have  received a copy  of the  GNU General Public License   *</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> *  along with this program. If not, see http://www.gnu.org/licenses/.     *</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> *                                                                         *</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &quot;<a class="code" href="client_8hpp.html">client.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &lt;argp.h&gt;</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="main__c_8cpp.html#a62f73ea01c816f1996aed4c66f57c4fb">   34</a></span><span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_variable" href="main__c_8cpp.html#a62f73ea01c816f1996aed4c66f57c4fb">argp_program_version</a> = <span class="stringliteral">&quot;TPK Client 1.0&quot;</span>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="main__c_8cpp.html#aaa037e59f26a80a8a2e35e6f2364004d">   37</a></span><span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_variable" href="main__c_8cpp.html#aaa037e59f26a80a8a2e35e6f2364004d">argp_program_bug_address</a> = <span class="stringliteral">&quot;&lt;lukasz.drozdz@polsl.pl&gt;&quot;</span>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="main__c_8cpp.html#af6164deb8a824f8cb2b9147cfc3174f5">   40</a></span><span class="keyword">static</span> <span class="keywordtype">char</span> <a class="code hl_variable" href="main__c_8cpp.html#af6164deb8a824f8cb2b9147cfc3174f5">doc</a>[] = <span class="stringliteral">&quot;Client program for TPK project&quot;</span>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="main__c_8cpp.html#a91b08784b3668a8a1fbe2eec1947fb9d">   43</a></span><span class="keyword">static</span> <span class="keywordtype">char</span> <a class="code hl_variable" href="main__c_8cpp.html#a91b08784b3668a8a1fbe2eec1947fb9d">args_doc</a>[] = <span class="stringliteral">&quot;FILE [LOCALFILE]&quot;</span>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="main__c_8cpp.html#abc1fd3a47aea6a8944038c9100eb9135">   46</a></span><span class="keyword">static</span> <span class="keyword">struct </span>argp_option <a class="code hl_variable" href="main__c_8cpp.html#abc1fd3a47aea6a8944038c9100eb9135">options</a>[] =</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>{</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>     { <span class="stringliteral">&quot;download&quot;</span>,  <span class="charliteral">&#39;d&#39;</span>, 0,        0, <span class="stringliteral">&quot;Download selected file&quot;</span> },</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>     { <span class="stringliteral">&quot;upload&quot;</span>,    <span class="charliteral">&#39;u&#39;</span>, 0,        0, <span class="stringliteral">&quot;Upload selected file&quot;</span> },</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>     { <span class="stringliteral">&quot;port&quot;</span>,      <span class="charliteral">&#39;p&#39;</span>, <span class="stringliteral">&quot;PORT&quot;</span>,   0, <span class="stringliteral">&quot;Select port number (default is 8080)&quot;</span> },</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>     { <span class="stringliteral">&quot;host&quot;</span>,      <span class="charliteral">&#39;h&#39;</span>, <span class="stringliteral">&quot;HOST&quot;</span>,   0, <span class="stringliteral">&quot;Select hostname (default is localhost)&quot;</span> },</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>     { 0 }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>};</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="structarguments.html">   62</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structarguments.html">arguments</a></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>{</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="structarguments.html#a9f2f4176075560e198de2f933ed0121a">   69</a></span>     <span class="keyword">enum</span> <a class="code hl_enumeration" href="structarguments.html#a9f2f4176075560e198de2f933ed0121a">modeset</a></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>     {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="structarguments.html#a9f2f4176075560e198de2f933ed0121aa28865934d0f86f336f2c0159053c3350">   71</a></span>          <a class="code hl_enumvalue" href="structarguments.html#a9f2f4176075560e198de2f933ed0121aa28865934d0f86f336f2c0159053c3350">unknown</a>, </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="structarguments.html#a9f2f4176075560e198de2f933ed0121aa4978e0b82be6b180e2b84ef64169e24b">   72</a></span>          <a class="code hl_enumvalue" href="structarguments.html#a9f2f4176075560e198de2f933ed0121aa4978e0b82be6b180e2b84ef64169e24b">download</a>, </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>          <a class="code hl_enumvalue" href="structarguments.html#a9f2f4176075560e198de2f933ed0121aaab9693b2bc9774da30a218a900f0ba49">upload</a> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="structarguments.html#a9f2f4176075560e198de2f933ed0121aaab9693b2bc9774da30a218a900f0ba49">   74</a></span>     };</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="structarguments.html#a94fa589c9105e7055d4184646abe8ea8">   76</a></span>     <a class="code hl_enumeration" href="structarguments.html#a9f2f4176075560e198de2f933ed0121a">modeset</a> <a class="code hl_variable" href="structarguments.html#a94fa589c9105e7055d4184646abe8ea8">mode</a>; </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="structarguments.html#a38a1fb4a3b8a012fb4fbf6c9fe5c000c">   78</a></span>     <span class="keywordtype">string</span> <a class="code hl_variable" href="structarguments.html#a38a1fb4a3b8a012fb4fbf6c9fe5c000c">local</a>; </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="structarguments.html#a5fd7bb10a3a495c358b143a8b01e7443">   79</a></span>     <span class="keywordtype">string</span> <a class="code hl_variable" href="structarguments.html#a5fd7bb10a3a495c358b143a8b01e7443">file</a>; </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="structarguments.html#a3ce4b8ecd3059ce872cd12f26f02b0ca">   80</a></span>     <span class="keywordtype">string</span> <a class="code hl_variable" href="structarguments.html#a3ce4b8ecd3059ce872cd12f26f02b0ca">host</a>; </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="structarguments.html#a8e1cda42f564407ae65785a10b54e6b6">   82</a></span>     uint16_t <a class="code hl_variable" href="structarguments.html#a8e1cda42f564407ae65785a10b54e6b6">port</a>; </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>};</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="main__c_8cpp.html#a61c89f0bcbd0d33d522365803af6a047">   95</a></span><span class="keyword">static</span> error_t <a class="code hl_function" href="main__c_8cpp.html#a61c89f0bcbd0d33d522365803af6a047">parse_opt</a>(<span class="keywordtype">int</span> key, <span class="keywordtype">char</span>* arg, argp_state* state)</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>{</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>     <span class="keyword">struct </span><a class="code hl_struct" href="structarguments.html">arguments</a>* args = (<a class="code hl_struct" href="structarguments.html">arguments</a>*) state-&gt;input;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>     switch (key)</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>     {</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>          <span class="keywordflow">case</span> <span class="charliteral">&#39;p&#39;</span>:</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>               args-&gt;<a class="code hl_variable" href="structarguments.html#a8e1cda42f564407ae65785a10b54e6b6">port</a> = atoi(arg);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>               <span class="keywordflow">if</span> (!args-&gt;<a class="code hl_variable" href="structarguments.html#a8e1cda42f564407ae65785a10b54e6b6">port</a>) argp_usage(state);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>          <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>          <span class="keywordflow">case</span> <span class="charliteral">&#39;h&#39;</span>:</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>               args-&gt;<a class="code hl_variable" href="structarguments.html#a3ce4b8ecd3059ce872cd12f26f02b0ca">host</a> = arg;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>               <span class="keywordflow">if</span> (args-&gt;<a class="code hl_variable" href="structarguments.html#a3ce4b8ecd3059ce872cd12f26f02b0ca">host</a>.empty()) argp_usage(state);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>          <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>          <span class="keywordflow">case</span> <span class="charliteral">&#39;u&#39;</span>:</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>               <span class="keywordflow">if</span> (args-&gt;<a class="code hl_variable" href="structarguments.html#a94fa589c9105e7055d4184646abe8ea8">mode</a> != <a class="code hl_enumvalue" href="structarguments.html#a9f2f4176075560e198de2f933ed0121aa28865934d0f86f336f2c0159053c3350">arguments::unknown</a>) argp_usage(state);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>               <span class="keywordflow">else</span> args-&gt;<a class="code hl_variable" href="structarguments.html#a94fa589c9105e7055d4184646abe8ea8">mode</a> = <a class="code hl_enumvalue" href="structarguments.html#a9f2f4176075560e198de2f933ed0121aaab9693b2bc9774da30a218a900f0ba49">arguments::upload</a>;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>          <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>          <span class="keywordflow">case</span> <span class="charliteral">&#39;d&#39;</span>:</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>               <span class="keywordflow">if</span> (args-&gt;<a class="code hl_variable" href="structarguments.html#a94fa589c9105e7055d4184646abe8ea8">mode</a> != <a class="code hl_enumvalue" href="structarguments.html#a9f2f4176075560e198de2f933ed0121aa28865934d0f86f336f2c0159053c3350">arguments::unknown</a>) argp_usage(state);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>               <span class="keywordflow">else</span> args-&gt;<a class="code hl_variable" href="structarguments.html#a94fa589c9105e7055d4184646abe8ea8">mode</a> = <a class="code hl_enumvalue" href="structarguments.html#a9f2f4176075560e198de2f933ed0121aa4978e0b82be6b180e2b84ef64169e24b">arguments::download</a>;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>          <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>          <span class="keywordflow">case</span> ARGP_KEY_ARG:</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>               <span class="keywordflow">switch</span> (state-&gt;arg_num)</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>               {</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>                    <span class="keywordflow">case</span> 0:</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>                         args-&gt;<a class="code hl_variable" href="structarguments.html#a5fd7bb10a3a495c358b143a8b01e7443">file</a> = arg;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>                    <span class="keywordflow">case</span> 1:</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>                         args-&gt;<a class="code hl_variable" href="structarguments.html#a38a1fb4a3b8a012fb4fbf6c9fe5c000c">local</a> = arg;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>                    <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>                         argp_usage(state);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>               }</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>          <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>          <span class="keywordflow">case</span> ARGP_KEY_END:</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>               <span class="keywordflow">if</span> (state-&gt;arg_num &lt; 1 || args-&gt;<a class="code hl_variable" href="structarguments.html#a5fd7bb10a3a495c358b143a8b01e7443">file</a>.empty() ||</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>                   args-&gt;<a class="code hl_variable" href="structarguments.html#a94fa589c9105e7055d4184646abe8ea8">mode</a> == <a class="code hl_enumvalue" href="structarguments.html#a9f2f4176075560e198de2f933ed0121aa28865934d0f86f336f2c0159053c3350">arguments::unknown</a>) argp_usage(state);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>               <span class="keywordflow">else</span> <span class="keywordflow">if</span> (args-&gt;<a class="code hl_variable" href="structarguments.html#a38a1fb4a3b8a012fb4fbf6c9fe5c000c">local</a>.empty()) args-&gt;<a class="code hl_variable" href="structarguments.html#a38a1fb4a3b8a012fb4fbf6c9fe5c000c">local</a> = args-&gt;<a class="code hl_variable" href="structarguments.html#a5fd7bb10a3a495c358b143a8b01e7443">file</a>;</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>          <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>          <span class="keywordflow">default</span>: <span class="keywordflow">return</span> ARGP_ERR_UNKNOWN;</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>     }</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>     <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>}</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="main__c_8cpp.html#ab70c96531b1b652d70c221cfaf3207f3">  145</a></span><span class="keyword">static</span> <span class="keyword">struct </span><a class="code hl_variable" href="main__c_8cpp.html#ab70c96531b1b652d70c221cfaf3207f3">argp</a> <a class="code hl_variable" href="main__c_8cpp.html#ab70c96531b1b652d70c221cfaf3207f3">argp</a> = { <a class="code hl_variable" href="main__c_8cpp.html#abc1fd3a47aea6a8944038c9100eb9135">options</a>, <a class="code hl_function" href="main__c_8cpp.html#a61c89f0bcbd0d33d522365803af6a047">parse_opt</a>, <a class="code hl_variable" href="main__c_8cpp.html#a91b08784b3668a8a1fbe2eec1947fb9d">args_doc</a>, <a class="code hl_variable" href="main__c_8cpp.html#af6164deb8a824f8cb2b9147cfc3174f5">doc</a> };</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="main__c_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">  155</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="main__c_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>* argv[])</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>{</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>     <span class="comment">// Wartości domyślne parametrów</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>     <span class="keyword">struct </span><a class="code hl_struct" href="structarguments.html">arguments</a> args =</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>     {</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>          .<a class="code hl_variable" href="structarguments.html#a94fa589c9105e7055d4184646abe8ea8">mode</a> = <a class="code hl_enumvalue" href="structarguments.html#a9f2f4176075560e198de2f933ed0121aa28865934d0f86f336f2c0159053c3350">arguments::unknown</a>,</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>          .host = <span class="stringliteral">&quot;localhost&quot;</span>,</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>          .port = 8080</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>     };</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>     <span class="comment">// Przetwórz argumenty</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>     argp_parse(&amp;<a class="code hl_variable" href="main__c_8cpp.html#ab70c96531b1b652d70c221cfaf3207f3">argp</a>, argc, argv, 0, 0, &amp;args);</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>     <a class="code hl_class" href="class_c_l_i_e_n_t.html">CLIENT</a> cli; <span class="comment">// Utwórz klienta</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>     <span class="comment">// Nawiąż połączenie i wykonaj akcję</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>     <span class="keywordflow">if</span> (cli.<a class="code hl_function" href="class_c_l_i_e_n_t.html#a783756fadeb1f24218acdee54bfb7b4a">connect</a>(args.<a class="code hl_variable" href="structarguments.html#a3ce4b8ecd3059ce872cd12f26f02b0ca">host</a>, args.<a class="code hl_variable" href="structarguments.html#a8e1cda42f564407ae65785a10b54e6b6">port</a>)) <span class="keywordflow">switch</span> (args.<a class="code hl_variable" href="structarguments.html#a94fa589c9105e7055d4184646abe8ea8">mode</a>)</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>     {</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>          <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="structarguments.html#a9f2f4176075560e198de2f933ed0121aa4978e0b82be6b180e2b84ef64169e24b">arguments::download</a>:</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>               cli.<a class="code hl_function" href="class_c_l_i_e_n_t.html#ad348ac551652139ec10b8598f72527c1">download</a>(args.<a class="code hl_variable" href="structarguments.html#a5fd7bb10a3a495c358b143a8b01e7443">file</a>, args.<a class="code hl_variable" href="structarguments.html#a38a1fb4a3b8a012fb4fbf6c9fe5c000c">local</a>);</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>          <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>          <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="structarguments.html#a9f2f4176075560e198de2f933ed0121aaab9693b2bc9774da30a218a900f0ba49">arguments::upload</a>:</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>               cli.<a class="code hl_function" href="class_c_l_i_e_n_t.html#a83c83556e186942b8d9c8b812a295454">upload</a>(args.<a class="code hl_variable" href="structarguments.html#a5fd7bb10a3a495c358b143a8b01e7443">file</a>, args.<a class="code hl_variable" href="structarguments.html#a38a1fb4a3b8a012fb4fbf6c9fe5c000c">local</a>);</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>          <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>          <span class="keywordflow">default</span>: <span class="keywordflow">return</span> -2;</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>     }</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>     <span class="keywordflow">else</span> <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>     <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>}</div>
 <div class="ttc" id="aclass_c_l_i_e_n_t_html"><div class="ttname"><a href="class_c_l_i_e_n_t.html">CLIENT</a></div><div class="ttdoc">Klasa klienta.</div><div class="ttdef"><b>Definition:</b> <a href="client_8hpp_source.html#l00046">client.hpp:47</a></div></div>
-<div class="ttc" id="aclass_c_l_i_e_n_t_html_a783756fadeb1f24218acdee54bfb7b4a"><div class="ttname"><a href="class_c_l_i_e_n_t.html#a783756fadeb1f24218acdee54bfb7b4a">CLIENT::connect</a></div><div class="ttdeci">bool connect(const string &amp;addr, const uint16_t port)</div><div class="ttdoc">Inicjacja połaczenia.</div><div class="ttdef"><b>Definition:</b> <a href="client_8cpp_source.html#l00038">client.cpp:38</a></div></div>
+<div class="ttc" id="aclass_c_l_i_e_n_t_html_a783756fadeb1f24218acdee54bfb7b4a"><div class="ttname"><a href="class_c_l_i_e_n_t.html#a783756fadeb1f24218acdee54bfb7b4a">CLIENT::connect</a></div><div class="ttdeci">bool connect(const string &amp;addr, const uint16_t port)</div><div class="ttdoc">Inicjacja połączenia.</div><div class="ttdef"><b>Definition:</b> <a href="client_8cpp_source.html#l00038">client.cpp:38</a></div></div>
 <div class="ttc" id="aclass_c_l_i_e_n_t_html_a83c83556e186942b8d9c8b812a295454"><div class="ttname"><a href="class_c_l_i_e_n_t.html#a83c83556e186942b8d9c8b812a295454">CLIENT::upload</a></div><div class="ttdeci">int upload(const string &amp;path, const string &amp;src)</div><div class="ttdoc">Wysyłanie pliku.</div><div class="ttdef"><b>Definition:</b> <a href="client_8cpp_source.html#l00145">client.cpp:145</a></div></div>
 <div class="ttc" id="aclass_c_l_i_e_n_t_html_ad348ac551652139ec10b8598f72527c1"><div class="ttname"><a href="class_c_l_i_e_n_t.html#ad348ac551652139ec10b8598f72527c1">CLIENT::download</a></div><div class="ttdeci">int download(const string &amp;path, const string &amp;dest)</div><div class="ttdoc">Pobieranie pliku.</div><div class="ttdef"><b>Definition:</b> <a href="client_8cpp_source.html#l00102">client.cpp:102</a></div></div>
 <div class="ttc" id="aclient_8hpp_html"><div class="ttname"><a href="client_8hpp.html">client.hpp</a></div><div class="ttdoc">Plik nagłówkowy klienta.</div></div>
@@ -218,10 +217,10 @@ $(function() {
 <div class="ttc" id="amain__c_8cpp_html_a62f73ea01c816f1996aed4c66f57c4fb"><div class="ttname"><a href="main__c_8cpp.html#a62f73ea01c816f1996aed4c66f57c4fb">argp_program_version</a></div><div class="ttdeci">const char * argp_program_version</div><div class="ttdoc">Wersja programu dla argp.</div><div class="ttdef"><b>Definition:</b> <a href="main__c_8cpp_source.html#l00034">main_c.cpp:34</a></div></div>
 <div class="ttc" id="amain__c_8cpp_html_a91b08784b3668a8a1fbe2eec1947fb9d"><div class="ttname"><a href="main__c_8cpp.html#a91b08784b3668a8a1fbe2eec1947fb9d">args_doc</a></div><div class="ttdeci">static char args_doc[]</div><div class="ttdoc">Opis parametrów dla argp.</div><div class="ttdef"><b>Definition:</b> <a href="main__c_8cpp_source.html#l00043">main_c.cpp:43</a></div></div>
 <div class="ttc" id="amain__c_8cpp_html_aaa037e59f26a80a8a2e35e6f2364004d"><div class="ttname"><a href="main__c_8cpp.html#aaa037e59f26a80a8a2e35e6f2364004d">argp_program_bug_address</a></div><div class="ttdeci">const char * argp_program_bug_address</div><div class="ttdoc">Email zgłoszenia błędu dla argp.</div><div class="ttdef"><b>Definition:</b> <a href="main__c_8cpp_source.html#l00037">main_c.cpp:37</a></div></div>
-<div class="ttc" id="amain__c_8cpp_html_ab70c96531b1b652d70c221cfaf3207f3"><div class="ttname"><a href="main__c_8cpp.html#ab70c96531b1b652d70c221cfaf3207f3">argp</a></div><div class="ttdeci">static struct argp argp</div><div class="ttdoc">Struktura konfiguracji argp.</div><div class="ttdef"><b>Definition:</b> <a href="main__c_8cpp_source.html#l00095">main_c.cpp:145</a></div></div>
-<div class="ttc" id="amain__c_8cpp_html_abc1fd3a47aea6a8944038c9100eb9135"><div class="ttname"><a href="main__c_8cpp.html#abc1fd3a47aea6a8944038c9100eb9135">options</a></div><div class="ttdeci">static struct argp_option options[]</div><div class="ttdoc">Struktura parametrów dla argp.</div><div class="ttdef"><b>Definition:</b> <a href="main__c_8cpp_source.html#l00043">main_c.cpp:46</a></div></div>
+<div class="ttc" id="amain__c_8cpp_html_ab70c96531b1b652d70c221cfaf3207f3"><div class="ttname"><a href="main__c_8cpp.html#ab70c96531b1b652d70c221cfaf3207f3">argp</a></div><div class="ttdeci">static struct argp argp</div><div class="ttdoc">Struktura konfiguracji argp.</div><div class="ttdef"><b>Definition:</b> <a href="main__c_8cpp_source.html#l00145">main_c.cpp:145</a></div></div>
+<div class="ttc" id="amain__c_8cpp_html_abc1fd3a47aea6a8944038c9100eb9135"><div class="ttname"><a href="main__c_8cpp.html#abc1fd3a47aea6a8944038c9100eb9135">options</a></div><div class="ttdeci">static struct argp_option options[]</div><div class="ttdoc">Struktura parametrów dla argp.</div><div class="ttdef"><b>Definition:</b> <a href="main__c_8cpp_source.html#l00046">main_c.cpp:46</a></div></div>
 <div class="ttc" id="amain__c_8cpp_html_af6164deb8a824f8cb2b9147cfc3174f5"><div class="ttname"><a href="main__c_8cpp.html#af6164deb8a824f8cb2b9147cfc3174f5">doc</a></div><div class="ttdeci">static char doc[]</div><div class="ttdoc">Opis programu dla argp.</div><div class="ttdef"><b>Definition:</b> <a href="main__c_8cpp_source.html#l00040">main_c.cpp:40</a></div></div>
-<div class="ttc" id="astructarguments_html"><div class="ttname"><a href="structarguments.html">arguments</a></div><div class="ttdoc">Struktura opisujaca argumenty.</div><div class="ttdef"><b>Definition:</b> <a href="main__c_8cpp_source.html#l00062">main_c.cpp:63</a></div></div>
+<div class="ttc" id="astructarguments_html"><div class="ttname"><a href="structarguments.html">arguments</a></div><div class="ttdoc">Struktura opisująca argumenty.</div><div class="ttdef"><b>Definition:</b> <a href="main__c_8cpp_source.html#l00062">main_c.cpp:63</a></div></div>
 <div class="ttc" id="astructarguments_html_a38a1fb4a3b8a012fb4fbf6c9fe5c000c"><div class="ttname"><a href="structarguments.html#a38a1fb4a3b8a012fb4fbf6c9fe5c000c">arguments::local</a></div><div class="ttdeci">string local</div><div class="ttdoc">Lokalna ścieżka pliku.</div><div class="ttdef"><b>Definition:</b> <a href="main__c_8cpp_source.html#l00078">main_c.cpp:78</a></div></div>
 <div class="ttc" id="astructarguments_html_a3ce4b8ecd3059ce872cd12f26f02b0ca"><div class="ttname"><a href="structarguments.html#a3ce4b8ecd3059ce872cd12f26f02b0ca">arguments::host</a></div><div class="ttdeci">string host</div><div class="ttdoc">Adres serwera.</div><div class="ttdef"><b>Definition:</b> <a href="main__c_8cpp_source.html#l00080">main_c.cpp:80</a></div></div>
 <div class="ttc" id="astructarguments_html_a5fd7bb10a3a495c358b143a8b01e7443"><div class="ttname"><a href="structarguments.html#a5fd7bb10a3a495c358b143a8b01e7443">arguments::file</a></div><div class="ttdeci">string file</div><div class="ttdoc">Nazwa pliku na serwerze.</div><div class="ttdef"><b>Definition:</b> <a href="main__c_8cpp_source.html#l00079">main_c.cpp:79</a></div></div>
@@ -234,7 +233,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

@@ -2,8 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.9.1"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>TPK: Plik źródłowy main_s.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
@@ -19,10 +19,9 @@
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">TPK
-   &#160;<span id="projectnumber">1.0</span>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TPK<span id="projectnumber">&#160;1.0</span>
    </div>
    <div id="projectbrief">Przykładowy projekt wymiany plików</div>
   </td>
@@ -31,21 +30,22 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Wygenerowano przez Doxygen 1.9.1 -->
+<!-- Wygenerowano przez Doxygen 1.9.4 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Szukaj','.html');
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Szukaj','.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('',true,false,'search.php','Szukaj');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */</script>
+/* @license-end */
+</script>
 <div id="main-nav"></div>
 </div><!-- top -->
 <!-- window showing the filter options -->
@@ -63,61 +63,60 @@ $(function() {
 </div>
 
 <div class="header">
-  <div class="headertitle">
-<div class="title">main_s.cpp</div>  </div>
+  <div class="headertitle"><div class="title">main_s.cpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="main__s_8cpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *                                                                         *</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *  Simple file transfer project example                                   *</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *  Copyright (C) 2021  Łukasz &quot;Kuszki&quot; Dróżdż  lukasz.kuszki@gmail.com    *</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *                                                                         *</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *  This program is free software: you can redistribute it and/or modify   *</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> *  it under the terms of the GNU General Public License as published by   *</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *  the  Free Software Foundation, either  version 3 of the  License, or   *</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> *  (at your option) any later version.                                    *</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *                                                                         *</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> *  This  program  is  distributed  in the hope  that it will be useful,   *</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> *  but WITHOUT ANY  WARRANTY;  without  even  the  implied  warranty of   *</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *  MERCHANTABILITY  or  FITNESS  FOR  A  PARTICULAR  PURPOSE.  See  the   *</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> *  GNU General Public License for more details.                           *</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> *                                                                         *</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> *  You should have  received a copy  of the  GNU General Public License   *</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> *  along with this program. If not, see http://www.gnu.org/licenses/.     *</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> *                                                                         *</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="server_8hpp.html">server.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="main__s_8cpp.html#a8fdef648be7a53ccd85a58cef8ee967b">   30</a></span>&#160;<span class="keyword">static</span> <a class="code" href="class_s_e_r_v_e_r.html">SERVER</a>* <a class="code" href="main__s_8cpp.html#a8fdef648be7a53ccd85a58cef8ee967b">srv</a>; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">void</span> <a class="code" href="main__s_8cpp.html#a08c3b0d52d0d97a0c49f13f40d2c5653">handler</a>(<span class="keywordtype">int</span>);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keywordtype">int</span> <a class="code" href="main__s_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>* argv[]);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="main__s_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">   50</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="main__s_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>* argv[])</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;     <span class="comment">// Utworzenie serwera</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;     <a class="code" href="main__s_8cpp.html#a8fdef648be7a53ccd85a58cef8ee967b">srv</a> = <span class="keyword">new</span> <a class="code" href="class_s_e_r_v_e_r.html">SERVER</a>();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;     <span class="comment">// Rejestracja obsługi sygnałów przez funkcję `handler`</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;     signal(SIGABRT, <a class="code" href="main__s_8cpp.html#a08c3b0d52d0d97a0c49f13f40d2c5653">handler</a>); <span class="comment">// Błąd krytyczny (np. libc)</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;     signal(SIGINT, <a class="code" href="main__s_8cpp.html#a08c3b0d52d0d97a0c49f13f40d2c5653">handler</a>); <span class="comment">// Kombinacja CTRL+C w terminalu</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;     signal(SIGTERM, <a class="code" href="main__s_8cpp.html#a08c3b0d52d0d97a0c49f13f40d2c5653">handler</a>); <span class="comment">// Proces zakonczony (np. kill)</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;     <span class="keywordflow">if</span> (!<a class="code" href="main__s_8cpp.html#a8fdef648be7a53ccd85a58cef8ee967b">srv</a>-&gt;<a class="code" href="class_s_e_r_v_e_r.html#a178595d3078b6b04f910e7469e5095d5">start</a>()) cout &lt;&lt; <span class="stringliteral">&quot;FAIL\n&quot;</span>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;     <span class="keywordflow">else</span> <span class="keywordflow">while</span> (<a class="code" href="main__s_8cpp.html#a8fdef648be7a53ccd85a58cef8ee967b">srv</a>-&gt;<a class="code" href="class_s_e_r_v_e_r.html#ae5390a25208f81c139a73747374a02bf">loop</a>());</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;     <span class="keyword">delete</span> <a class="code" href="main__s_8cpp.html#a8fdef648be7a53ccd85a58cef8ee967b">srv</a>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;     <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="main__s_8cpp.html#a08c3b0d52d0d97a0c49f13f40d2c5653">   68</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="main__s_8cpp.html#a08c3b0d52d0d97a0c49f13f40d2c5653">handler</a>(<span class="keywordtype">int</span> signal)</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;     <a class="code" href="main__s_8cpp.html#a8fdef648be7a53ccd85a58cef8ee967b">srv</a>-&gt;<a class="code" href="class_s_e_r_v_e_r.html#ae580f09ceadac508da2c73d7b0edd3da">end</a>(signal); <span class="comment">// Zakończ pętlę główną</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
-<div class="ttc" id="aclass_s_e_r_v_e_r_html"><div class="ttname"><a href="class_s_e_r_v_e_r.html">SERVER</a></div><div class="ttdoc">Klasa serwera.</div><div class="ttdef"><b>Definition:</b> <a href="server_8hpp_source.html#l00046">server.hpp:47</a></div></div>
+<a href="main__s_8cpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> *                                                                         *</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *  Simple file transfer project example                                   *</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> *  Copyright (C) 2021  Łukasz &quot;Kuszki&quot; Dróżdż  lukasz.kuszki@gmail.com    *</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> *                                                                         *</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> *  This program is free software: you can redistribute it and/or modify   *</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> *  it under the terms of the GNU General Public License as published by   *</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> *  the  Free Software Foundation, either  version 3 of the  License, or   *</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> *  (at your option) any later version.                                    *</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> *                                                                         *</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> *  This  program  is  distributed  in the hope  that it will be useful,   *</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> *  but WITHOUT ANY  WARRANTY;  without  even  the  implied  warranty of   *</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> *  MERCHANTABILITY  or  FITNESS  FOR  A  PARTICULAR  PURPOSE.  See  the   *</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> *  GNU General Public License for more details.                           *</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> *                                                                         *</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> *  You should have  received a copy  of the  GNU General Public License   *</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> *  along with this program. If not, see http://www.gnu.org/licenses/.     *</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> *                                                                         *</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &quot;<a class="code" href="server_8hpp.html">server.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="main__s_8cpp.html#a8fdef648be7a53ccd85a58cef8ee967b">   30</a></span><span class="keyword">static</span> <a class="code hl_class" href="class_s_e_r_v_e_r.html">SERVER</a>* <a class="code hl_variable" href="main__s_8cpp.html#a8fdef648be7a53ccd85a58cef8ee967b">srv</a>; </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keywordtype">void</span> <a class="code hl_function" href="main__s_8cpp.html#a08c3b0d52d0d97a0c49f13f40d2c5653">handler</a>(<span class="keywordtype">int</span>);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keywordtype">int</span> <a class="code hl_function" href="main__s_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>* argv[]);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="main__s_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">   50</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="main__s_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>* argv[])</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>{</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>     <span class="comment">// Utworzenie serwera</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>     <a class="code hl_variable" href="main__s_8cpp.html#a8fdef648be7a53ccd85a58cef8ee967b">srv</a> = <span class="keyword">new</span> <a class="code hl_class" href="class_s_e_r_v_e_r.html">SERVER</a>();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>     <span class="comment">// Rejestracja obsługi sygnałów przez funkcję `handler`</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>     signal(SIGABRT, <a class="code hl_function" href="main__s_8cpp.html#a08c3b0d52d0d97a0c49f13f40d2c5653">handler</a>); <span class="comment">// Błąd krytyczny (np. libc)</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>     signal(SIGINT, <a class="code hl_function" href="main__s_8cpp.html#a08c3b0d52d0d97a0c49f13f40d2c5653">handler</a>); <span class="comment">// Kombinacja CTRL+C w terminalu</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>     signal(SIGTERM, <a class="code hl_function" href="main__s_8cpp.html#a08c3b0d52d0d97a0c49f13f40d2c5653">handler</a>); <span class="comment">// Proces zakończony (np. kill)</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>     <span class="keywordflow">if</span> (!<a class="code hl_variable" href="main__s_8cpp.html#a8fdef648be7a53ccd85a58cef8ee967b">srv</a>-&gt;<a class="code hl_function" href="class_s_e_r_v_e_r.html#a178595d3078b6b04f910e7469e5095d5">start</a>()) cout &lt;&lt; <span class="stringliteral">&quot;FAIL\n&quot;</span>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>     <span class="keywordflow">else</span> <span class="keywordflow">while</span> (<a class="code hl_variable" href="main__s_8cpp.html#a8fdef648be7a53ccd85a58cef8ee967b">srv</a>-&gt;<a class="code hl_function" href="class_s_e_r_v_e_r.html#ae5390a25208f81c139a73747374a02bf">loop</a>());</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>     <span class="keyword">delete</span> <a class="code hl_variable" href="main__s_8cpp.html#a8fdef648be7a53ccd85a58cef8ee967b">srv</a>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>     <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>}</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="main__s_8cpp.html#a08c3b0d52d0d97a0c49f13f40d2c5653">   68</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="main__s_8cpp.html#a08c3b0d52d0d97a0c49f13f40d2c5653">handler</a>(<span class="keywordtype">int</span> signal)</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>{</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>     <a class="code hl_variable" href="main__s_8cpp.html#a8fdef648be7a53ccd85a58cef8ee967b">srv</a>-&gt;<a class="code hl_function" href="class_s_e_r_v_e_r.html#ae580f09ceadac508da2c73d7b0edd3da">end</a>(signal); <span class="comment">// Zakończ pętlę główną</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>}</div>
+<div class="ttc" id="aclass_s_e_r_v_e_r_html"><div class="ttname"><a href="class_s_e_r_v_e_r.html">SERVER</a></div><div class="ttdoc">Klasa serwera.</div><div class="ttdef"><b>Definition:</b> <a href="server_8hpp_source.html#l00047">server.hpp:48</a></div></div>
 <div class="ttc" id="aclass_s_e_r_v_e_r_html_a178595d3078b6b04f910e7469e5095d5"><div class="ttname"><a href="class_s_e_r_v_e_r.html#a178595d3078b6b04f910e7469e5095d5">SERVER::start</a></div><div class="ttdeci">bool start(const string &amp;addr=&quot;0.0.0.0&quot;, const uint16_t port=8080, const int queue=10)</div><div class="ttdoc">Inicjacja serwera.</div><div class="ttdef"><b>Definition:</b> <a href="server_8cpp_source.html#l00038">server.cpp:38</a></div></div>
 <div class="ttc" id="aclass_s_e_r_v_e_r_html_ae5390a25208f81c139a73747374a02bf"><div class="ttname"><a href="class_s_e_r_v_e_r.html#ae5390a25208f81c139a73747374a02bf">SERVER::loop</a></div><div class="ttdeci">bool loop(int timeout=-1)</div><div class="ttdoc">Pętla serwera.</div><div class="ttdef"><b>Definition:</b> <a href="server_8cpp_source.html#l00126">server.cpp:126</a></div></div>
 <div class="ttc" id="aclass_s_e_r_v_e_r_html_ae580f09ceadac508da2c73d7b0edd3da"><div class="ttname"><a href="class_s_e_r_v_e_r.html#ae580f09ceadac508da2c73d7b0edd3da">SERVER::end</a></div><div class="ttdeci">void end(int signal)</div><div class="ttdoc">Zatrzymuje serwer.</div><div class="ttdef"><b>Definition:</b> <a href="server_8cpp_source.html#l00119">server.cpp:119</a></div></div>
@@ -128,7 +127,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

@@ -2,10 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.9.1"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>TPK-Example</title>
+<title>TPK: TPK</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -19,10 +19,9 @@
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">TPK
-   &#160;<span id="projectnumber">1.0</span>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TPK<span id="projectnumber">&#160;1.0</span>
    </div>
    <div id="projectbrief">Przykładowy projekt wymiany plików</div>
   </td>
@@ -31,21 +30,22 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Wygenerowano przez Doxygen 1.9.1 -->
+<!-- Wygenerowano przez Doxygen 1.9.4 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Szukaj','.html');
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Szukaj','.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('',true,false,'search.php','Szukaj');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */</script>
+/* @license-end */
+</script>
 <div id="main-nav"></div>
 </div><!-- top -->
 <!-- window showing the filter options -->
@@ -62,33 +62,35 @@ $(function() {
 </iframe>
 </div>
 
-<div class="PageDoc"><div class="header">
-  <div class="headertitle">
-<div class="title"><a href="https://kuszki.github.io/tpkexample">TPK-Example</a> </div>  </div>
+<div><div class="header">
+  <div class="headertitle"><div class="title">TPK </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_README"></a> Przykładowy projekt prostej wymiany plików. Umozliwia przesyłanie plików pomiędzy klientem i serwerem w dwie strony. Jeden transfer pliku realizowany jest w jednej sesji. Po zakończeniu transferu połączenie zostaje zamknięte.</p>
-<p>W celu wymiany danych należy wysłać do serwera nagłówek z informacją o działaniu <code>UPLOAD|DOWNLOAD nazwa_pliku</code> a następnie oczekiwać na dane (<code>DOWNLOAD</code>) lub wysyłać dane pliku (<code>UPLOAD</code>).</p>
-<p>Projekt jest stworzony w celach dydaktycznych jako prezentacja wykorzystania gniazd sieciowych oraz biblioteki standardowej C++.</p>
-<h1><a class="anchor" id="autotoc_md1"></a>
-Biblioteka TPK</h1>
-<p>Biblioteka implementuje działanie klienta i serwera dostarczając dwa obiekty umozliwiajace wykorzystanie funkcji projektu.</p>
-<p>Serwer umożliwia obsługę wielu połączeń jednocześnie wykorzystując funkcję <code>poll</code>. Istnieje możliwość zastosowania serwera w wątku realizującym dodatkowe zadania poprzez wywoływanie metody <code>loop</code> pomiędzy pozostałymi zadaniami.</p>
-<p>Klient umozliwia połaczenie z serwerem i transfer pliku. Przed każdym transferem należy połączyć się z serwerem. Na końcu transferu połączenie jest automatycznie zamykane.</p>
-<h1><a class="anchor" id="autotoc_md2"></a>
-Program TPK_serwer</h1>
-<p>Przykładowe wykorzystanie serwera. W przykładzie pokazano jak obsłużyć poprawnie zdarzenie zamknięcia programu (SIGTERM, SIGHUP itd.). Serwer działa w nieskończonej pętli do czasu otrzymania zdarzenia zamykajacego program. Po otrzymaniu zdarzenia serwer dostaje informacje by nie obsługiwać więcej połączeń i zakończyć działanie.</p>
-<h1><a class="anchor" id="autotoc_md3"></a>
-Program TPK_klient</h1>
-<p>Przykładowe wykorzystanie klienta. W przykładzie pokazano jak wygodnie parsować argumenty programu przy użyciu <code>argp</code>. Po uruchomieniu program analizuje przekazane parametry i podejmuje wybrane działanie.</p>
-<p>Użycie: <code>TPK_klient [OPCJE...] PLIK [PLIK_LOKALNY]</code>.</p>
-<p>W celu wyświetlenia komunikatu pomocy należy uruchomić program z parametrem <code>--help</code> lub <code>-?</code>.</p>
-<h1><a class="anchor" id="autotoc_md4"></a>
-Dokumentacja</h1>
-<p>Do projektu dołączono plik <code>Doxyfile</code> służący do wygenerowania dokumentacji programem <code>Doxygen</code>. Wszystkie pliki projektu zawierają odpowiednio przygotowane komentarze na podstawie których generowana jest dokumentacja w formacie <code>HTML</code> oraz <code>PDF</code>.</p>
-<h1><a class="anchor" id="autotoc_md5"></a>
-Budowanie</h1>
-<p>W celu zbudowania projektu należy skonfigurować narzędzia: <code>CMake</code>, <code>git</code> oraz dowolny kompilator C++ (<code>GCC</code>, <code>clang</code>), a następnie:</p>
+<div class="textblock"><p ><a class="anchor" id="md_README"></a> <a href="https://github.com/Kuszki/PWSS-TPK-Example/actions/workflows/cmake.yml"><img src="https://github.com/Kuszki/PWSS-TPK-Example/actions/workflows/cmake.yml/badge.svg" alt="CMake Build" style="pointer-events: none;" class="inline"/></a></p>
+<h1><a class="anchor" id="autotoc_md0"></a>
+&lt;a href="https://kuszki.github.io/tpkexample" &gt;TPK-Example&lt;/a&gt;</h1>
+<p >Przykładowy projekt prostej wymiany plików. Umożliwia przesyłanie plików pomiędzy klientem i serwerem w dwie strony. Jeden transfer pliku realizowany jest w jednej sesji. Po zakończeniu transferu połączenie zostaje zamknięte.</p>
+<p >W celu wymiany danych należy wysłać do serwera nagłówek z informacją o działaniu <code>UPLOAD|DOWNLOAD nazwa_pliku</code> a następnie oczekiwać na dane (<code>DOWNLOAD</code>) lub wysyłać dane pliku (<code>UPLOAD</code>).</p>
+<p >Projekt jest stworzony w celach dydaktycznych jako prezentacja wykorzystania gniazd sieciowych oraz biblioteki standardowej C++.</p>
+<h2><a class="anchor" id="autotoc_md1"></a>
+Biblioteka TPK</h2>
+<p >Biblioteka implementuje działanie klienta i serwera dostarczając dwa obiekty umożliwiające wykorzystanie funkcji projektu.</p>
+<p >Serwer umożliwia obsługę wielu połączeń jednocześnie wykorzystując funkcję <code>poll</code>. Istnieje możliwość zastosowania serwera w wątku realizującym dodatkowe zadania poprzez wywoływanie metody <code>loop</code> pomiędzy pozostałymi zadaniami.</p>
+<p >Klient umożliwia połączenie z serwerem i transfer pliku. Przed każdym transferem należy połączyć się z serwerem. Na końcu transferu połączenie jest automatycznie zamykane.</p>
+<h2><a class="anchor" id="autotoc_md2"></a>
+Program TPK_serwer</h2>
+<p >Przykładowe wykorzystanie serwera. W przykładzie pokazano jak obsłużyć poprawnie zdarzenie zamknięcia programu (SIGTERM, SIGHUP itd.). Serwer działa w nieskończonej pętli do czasu otrzymania zdarzenia zamykającego program. Po otrzymaniu zdarzenia serwer dostaje informacje by nie obsługiwać więcej połączeń i zakończyć działanie.</p>
+<h2><a class="anchor" id="autotoc_md3"></a>
+Program TPK_klient</h2>
+<p >Przykładowe wykorzystanie klienta. W przykładzie pokazano jak wygodnie parsować argumenty programu przy użyciu <code>argp</code>. Po uruchomieniu program analizuje przekazane parametry i podejmuje wybrane działanie.</p>
+<p >Użycie: <code>TPK_klient [OPCJE...] PLIK [PLIK_LOKALNY]</code>.</p>
+<p >W celu wyświetlenia komunikatu pomocy należy uruchomić program z parametrem <code>--help</code> lub <code>-?</code>.</p>
+<h2><a class="anchor" id="autotoc_md4"></a>
+Dokumentacja</h2>
+<p >Do projektu dołączono plik <code>Doxyfile</code> służący do wygenerowania dokumentacji programem <code>Doxygen</code>. Wszystkie pliki projektu zawierają odpowiednio przygotowane komentarze na podstawie których generowana jest dokumentacja w formacie <code>HTML</code> oraz <code>PDF</code>. Link do dokumentacji znajduje się <a href="https://kuszki.github.io/tpkexample">tutaj</a>.</p>
+<h2><a class="anchor" id="autotoc_md5"></a>
+Budowanie</h2>
+<p >W celu zbudowania projektu należy skonfigurować narzędzia: <code>CMake</code>, <code>git</code> oraz dowolny kompilator C++ (<code>GCC</code>, <code>clang</code>), a następnie:</p>
 <ul>
 <li>sklonować projekt: <code>git clone <a href="https://github.com/Kuszki/TPK-Example">https://github.com/Kuszki/TPK-Example</a></code>,</li>
 <li>utworzyć katalog budowania: <code>mkdir build-TPK-Example</code>,</li>
@@ -100,7 +102,7 @@ Budowanie</h1>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

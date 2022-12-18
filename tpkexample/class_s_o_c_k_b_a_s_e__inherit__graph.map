@@ -1,5 +1,5 @@
 <map id="SOCKBASE" name="SOCKBASE">
-<area shape="rect" id="node1" title="Klasa bazowa." alt="" coords="87,5,215,156"/>
-<area shape="rect" id="node2" href="$class_c_l_i_e_n_t.html" title="Klasa klienta." alt="" coords="5,255,137,421"/>
-<area shape="rect" id="node3" href="$class_s_e_r_v_e_r.html" title="Klasa serwera." alt="" coords="161,204,301,472"/>
+<area shape="rect" id="node1" title="Klasa bazowa." alt="" coords="87,5,215,215"/>
+<area shape="rect" id="node2" href="$class_c_l_i_e_n_t.html" title="Klasa klienta." alt="" coords="5,314,137,479"/>
+<area shape="rect" id="node3" href="$class_s_e_r_v_e_r.html" title="Klasa serwera." alt="" coords="161,263,301,531"/>
 </map>

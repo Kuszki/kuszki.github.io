@@ -2,8 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.9.1"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>TPK: Plik źródłowy sockbase.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
@@ -19,10 +19,9 @@
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">TPK
-   &#160;<span id="projectnumber">1.0</span>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TPK<span id="projectnumber">&#160;1.0</span>
    </div>
    <div id="projectbrief">Przykładowy projekt wymiany plików</div>
   </td>
@@ -31,21 +30,22 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Wygenerowano przez Doxygen 1.9.1 -->
+<!-- Wygenerowano przez Doxygen 1.9.4 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Szukaj','.html');
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Szukaj','.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('',true,false,'search.php','Szukaj');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */</script>
+/* @license-end */
+</script>
 <div id="main-nav"></div>
 </div><!-- top -->
 <!-- window showing the filter options -->
@@ -63,82 +63,90 @@ $(function() {
 </div>
 
 <div class="header">
-  <div class="headertitle">
-<div class="title">sockbase.hpp</div>  </div>
+  <div class="headertitle"><div class="title">sockbase.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="sockbase_8hpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *                                                                         *</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *  Simple file transfer project example                                   *</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *  Copyright (C) 2021  Łukasz &quot;Kuszki&quot; Dróżdż  lukasz.kuszki@gmail.com    *</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *                                                                         *</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *  This program is free software: you can redistribute it and/or modify   *</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> *  it under the terms of the GNU General Public License as published by   *</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *  the  Free Software Foundation, either  version 3 of the  License, or   *</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> *  (at your option) any later version.                                    *</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *                                                                         *</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> *  This  program  is  distributed  in the hope  that it will be useful,   *</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> *  but WITHOUT ANY  WARRANTY;  without  even  the  implied  warranty of   *</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *  MERCHANTABILITY  or  FITNESS  FOR  A  PARTICULAR  PURPOSE.  See  the   *</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> *  GNU General Public License for more details.                           *</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> *                                                                         *</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> *  You should have  received a copy  of the  GNU General Public License   *</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> *  along with this program. If not, see http://www.gnu.org/licenses/.     *</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> *                                                                         *</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#ifndef SOCKBASE_HPP</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#define SOCKBASE_HPP</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;sys/types.h&gt;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;sys/socket.h&gt;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;sys/signal.h&gt;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;netinet/in.h&gt;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;arpa/inet.h&gt;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &lt;unistd.h&gt;</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &lt;poll.h&gt;</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &lt;netdb.h&gt;</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_s_o_c_k_b_a_s_e.html">   47</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_s_o_c_k_b_a_s_e.html">SOCKBASE</a></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;     <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_s_o_c_k_b_a_s_e.html#a4d9f3f95aa84e51b0f6676e9dfd913a5">   52</a></span>&#160;          <span class="keywordtype">int</span> <a class="code" href="class_s_o_c_k_b_a_s_e.html#a4d9f3f95aa84e51b0f6676e9dfd913a5">m_sock</a> = 0; </div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_s_o_c_k_b_a_s_e.html#addfdbfb550704cb1f6e972ae04ff9fc1">   53</a></span>&#160;          <span class="keywordtype">char</span> <a class="code" href="class_s_o_c_k_b_a_s_e.html#addfdbfb550704cb1f6e972ae04ff9fc1">m_buff</a>[1024]; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;     <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;          <span class="keyword">explicit</span> <a class="code" href="class_s_o_c_k_b_a_s_e.html#acbd58027cf695b68eb7ca6b6ae61184d">SOCKBASE</a>(<span class="keywordtype">void</span>); </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;          <span class="keyword">virtual</span> <a class="code" href="class_s_o_c_k_b_a_s_e.html#a79a8e6ce80aeac1f93818de2857aa33c">~SOCKBASE</a>(<span class="keywordtype">void</span>); </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;          <span class="keywordtype">void</span> <a class="code" href="class_s_o_c_k_b_a_s_e.html#a188bbebe9b3f5ec16b0304b512da7c0f">close</a>(<span class="keywordtype">void</span>); </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;     <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;          <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_s_o_c_k_b_a_s_e.html#aefa554c9927511c17d7319e0c9a73291">send_all</a>(<span class="keywordtype">int</span> sock, <span class="keyword">const</span> <span class="keywordtype">char</span>* data, <span class="keywordtype">size_t</span> size);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;          <span class="keyword">static</span> <span class="keywordtype">char</span>* <a class="code" href="class_s_o_c_k_b_a_s_e.html#a1bed341ace5336a5cfa1683929a3f497">get_name</a>(<span class="keywordtype">int</span> sock);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;};</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// SOCKBASE_HPP</span></div>
+<a href="sockbase_8hpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> *                                                                         *</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *  Simple file transfer project example                                   *</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> *  Copyright (C) 2021  Łukasz &quot;Kuszki&quot; Dróżdż  lukasz.kuszki@gmail.com    *</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> *                                                                         *</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> *  This program is free software: you can redistribute it and/or modify   *</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> *  it under the terms of the GNU General Public License as published by   *</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> *  the  Free Software Foundation, either  version 3 of the  License, or   *</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> *  (at your option) any later version.                                    *</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> *                                                                         *</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> *  This  program  is  distributed  in the hope  that it will be useful,   *</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> *  but WITHOUT ANY  WARRANTY;  without  even  the  implied  warranty of   *</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> *  MERCHANTABILITY  or  FITNESS  FOR  A  PARTICULAR  PURPOSE.  See  the   *</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> *  GNU General Public License for more details.                           *</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> *                                                                         *</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> *  You should have  received a copy  of the  GNU General Public License   *</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> *  along with this program. If not, see http://www.gnu.org/licenses/.     *</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> *                                                                         *</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#ifndef SOCKBASE_HPP</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#define SOCKBASE_HPP</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &lt;sys/types.h&gt;</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &lt;sys/socket.h&gt;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &lt;sys/signal.h&gt;</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &lt;netinet/in.h&gt;</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &lt;arpa/inet.h&gt;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &lt;unistd.h&gt;</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#include &lt;poll.h&gt;</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#include &lt;netdb.h&gt;</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_s_o_c_k_b_a_s_e.html">   47</a></span><span class="keyword">class </span><a class="code hl_class" href="class_s_o_c_k_b_a_s_e.html">SOCKBASE</a></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>{</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>     <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_s_o_c_k_b_a_s_e.html#a4d9f3f95aa84e51b0f6676e9dfd913a5">   52</a></span>          <span class="keywordtype">int</span> <a class="code hl_variable" href="class_s_o_c_k_b_a_s_e.html#a4d9f3f95aa84e51b0f6676e9dfd913a5">m_sock</a> = 0; </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_s_o_c_k_b_a_s_e.html#addfdbfb550704cb1f6e972ae04ff9fc1">   53</a></span>          <span class="keywordtype">char</span> <a class="code hl_variable" href="class_s_o_c_k_b_a_s_e.html#addfdbfb550704cb1f6e972ae04ff9fc1">m_buff</a>[1024]; </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>     <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="class_s_o_c_k_b_a_s_e.html#a5a0c762e27fd9a11fa1694132b7e3d71">   57</a></span>          <span class="keyword">explicit</span> <a class="code hl_function" href="class_s_o_c_k_b_a_s_e.html#a5a0c762e27fd9a11fa1694132b7e3d71">SOCKBASE</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_s_o_c_k_b_a_s_e.html">SOCKBASE</a>&amp;) = <span class="keyword">delete</span>; </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_s_o_c_k_b_a_s_e.html#a94b2a7c7d22845cc6f988039518d276c">   58</a></span>          <span class="keyword">explicit</span> <a class="code hl_function" href="class_s_o_c_k_b_a_s_e.html#a94b2a7c7d22845cc6f988039518d276c">SOCKBASE</a>(<a class="code hl_class" href="class_s_o_c_k_b_a_s_e.html">SOCKBASE</a>&amp;&amp;) = <span class="keyword">delete</span>; </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>          <span class="keyword">explicit</span> <a class="code hl_function" href="class_s_o_c_k_b_a_s_e.html#acbd58027cf695b68eb7ca6b6ae61184d">SOCKBASE</a>(<span class="keywordtype">void</span>); </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>          <span class="keyword">virtual</span> <a class="code hl_function" href="class_s_o_c_k_b_a_s_e.html#a79a8e6ce80aeac1f93818de2857aa33c">~SOCKBASE</a>(<span class="keywordtype">void</span>); </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>          <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_o_c_k_b_a_s_e.html#a188bbebe9b3f5ec16b0304b512da7c0f">close</a>(<span class="keywordtype">void</span>); </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="class_s_o_c_k_b_a_s_e.html#a128a89a17045910a8d90d7cce01983ec">   65</a></span>          <a class="code hl_class" href="class_s_o_c_k_b_a_s_e.html">SOCKBASE</a>&amp; <a class="code hl_function" href="class_s_o_c_k_b_a_s_e.html#a128a89a17045910a8d90d7cce01983ec">operator= </a>(<span class="keyword">const</span> <a class="code hl_class" href="class_s_o_c_k_b_a_s_e.html">SOCKBASE</a>&amp;) = <span class="keyword">delete</span>; </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="class_s_o_c_k_b_a_s_e.html#a8e194eb47471901ac5802a4ab0afc6a6">   66</a></span>          <a class="code hl_class" href="class_s_o_c_k_b_a_s_e.html">SOCKBASE</a>&amp; <a class="code hl_function" href="class_s_o_c_k_b_a_s_e.html#a128a89a17045910a8d90d7cce01983ec">operator= </a>(<a class="code hl_class" href="class_s_o_c_k_b_a_s_e.html">SOCKBASE</a>&amp;&amp;) = <span class="keyword">delete</span>; </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>     <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>          <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_s_o_c_k_b_a_s_e.html#aefa554c9927511c17d7319e0c9a73291">send_all</a>(<span class="keywordtype">int</span> sock, <span class="keyword">const</span> <span class="keywordtype">char</span>* data, <span class="keywordtype">size_t</span> size);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>          <span class="keyword">static</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="class_s_o_c_k_b_a_s_e.html#a1bed341ace5336a5cfa1683929a3f497">get_name</a>(<span class="keywordtype">int</span> sock);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>};</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="preprocessor">#endif </span><span class="comment">// SOCKBASE_HPP</span></div>
 <div class="ttc" id="aclass_s_o_c_k_b_a_s_e_html"><div class="ttname"><a href="class_s_o_c_k_b_a_s_e.html">SOCKBASE</a></div><div class="ttdoc">Klasa bazowa.</div><div class="ttdef"><b>Definition:</b> <a href="sockbase_8hpp_source.html#l00047">sockbase.hpp:48</a></div></div>
+<div class="ttc" id="aclass_s_o_c_k_b_a_s_e_html_a128a89a17045910a8d90d7cce01983ec"><div class="ttname"><a href="class_s_o_c_k_b_a_s_e.html#a128a89a17045910a8d90d7cce01983ec">SOCKBASE::operator=</a></div><div class="ttdeci">SOCKBASE &amp; operator=(const SOCKBASE &amp;)=delete</div><div class="ttdoc">Operator przypisania (kopia, usunięty)</div></div>
 <div class="ttc" id="aclass_s_o_c_k_b_a_s_e_html_a188bbebe9b3f5ec16b0304b512da7c0f"><div class="ttname"><a href="class_s_o_c_k_b_a_s_e.html#a188bbebe9b3f5ec16b0304b512da7c0f">SOCKBASE::close</a></div><div class="ttdeci">void close(void)</div><div class="ttdoc">Zamyka gniazdo.</div><div class="ttdef"><b>Definition:</b> <a href="sockbase_8cpp_source.html#l00035">sockbase.cpp:35</a></div></div>
 <div class="ttc" id="aclass_s_o_c_k_b_a_s_e_html_a1bed341ace5336a5cfa1683929a3f497"><div class="ttname"><a href="class_s_o_c_k_b_a_s_e.html#a1bed341ace5336a5cfa1683929a3f497">SOCKBASE::get_name</a></div><div class="ttdeci">static char * get_name(int sock)</div><div class="ttdoc">Pobranie nazwy hosta.</div><div class="ttdef"><b>Definition:</b> <a href="sockbase_8cpp_source.html#l00065">sockbase.cpp:65</a></div></div>
 <div class="ttc" id="aclass_s_o_c_k_b_a_s_e_html_a4d9f3f95aa84e51b0f6676e9dfd913a5"><div class="ttname"><a href="class_s_o_c_k_b_a_s_e.html#a4d9f3f95aa84e51b0f6676e9dfd913a5">SOCKBASE::m_sock</a></div><div class="ttdeci">int m_sock</div><div class="ttdoc">Gniazdo główne.</div><div class="ttdef"><b>Definition:</b> <a href="sockbase_8hpp_source.html#l00052">sockbase.hpp:52</a></div></div>
+<div class="ttc" id="aclass_s_o_c_k_b_a_s_e_html_a5a0c762e27fd9a11fa1694132b7e3d71"><div class="ttname"><a href="class_s_o_c_k_b_a_s_e.html#a5a0c762e27fd9a11fa1694132b7e3d71">SOCKBASE::SOCKBASE</a></div><div class="ttdeci">SOCKBASE(const SOCKBASE &amp;)=delete</div><div class="ttdoc">Konstruktor kopiujący (usunięty)</div></div>
 <div class="ttc" id="aclass_s_o_c_k_b_a_s_e_html_a79a8e6ce80aeac1f93818de2857aa33c"><div class="ttname"><a href="class_s_o_c_k_b_a_s_e.html#a79a8e6ce80aeac1f93818de2857aa33c">SOCKBASE::~SOCKBASE</a></div><div class="ttdeci">virtual ~SOCKBASE(void)</div><div class="ttdoc">Wirtualny destruktor.</div><div class="ttdef"><b>Definition:</b> <a href="sockbase_8cpp_source.html#l00030">sockbase.cpp:30</a></div></div>
+<div class="ttc" id="aclass_s_o_c_k_b_a_s_e_html_a94b2a7c7d22845cc6f988039518d276c"><div class="ttname"><a href="class_s_o_c_k_b_a_s_e.html#a94b2a7c7d22845cc6f988039518d276c">SOCKBASE::SOCKBASE</a></div><div class="ttdeci">SOCKBASE(SOCKBASE &amp;&amp;)=delete</div><div class="ttdoc">Konstruktor przenoszący (usunięty)</div></div>
 <div class="ttc" id="aclass_s_o_c_k_b_a_s_e_html_acbd58027cf695b68eb7ca6b6ae61184d"><div class="ttname"><a href="class_s_o_c_k_b_a_s_e.html#acbd58027cf695b68eb7ca6b6ae61184d">SOCKBASE::SOCKBASE</a></div><div class="ttdeci">SOCKBASE(void)</div><div class="ttdoc">Domyślny konstruktor.</div><div class="ttdef"><b>Definition:</b> <a href="sockbase_8cpp_source.html#l00028">sockbase.cpp:28</a></div></div>
 <div class="ttc" id="aclass_s_o_c_k_b_a_s_e_html_addfdbfb550704cb1f6e972ae04ff9fc1"><div class="ttname"><a href="class_s_o_c_k_b_a_s_e.html#addfdbfb550704cb1f6e972ae04ff9fc1">SOCKBASE::m_buff</a></div><div class="ttdeci">char m_buff[1024]</div><div class="ttdoc">Ogólny bufor na dane.</div><div class="ttdef"><b>Definition:</b> <a href="sockbase_8hpp_source.html#l00053">sockbase.hpp:53</a></div></div>
 <div class="ttc" id="aclass_s_o_c_k_b_a_s_e_html_aefa554c9927511c17d7319e0c9a73291"><div class="ttname"><a href="class_s_o_c_k_b_a_s_e.html#aefa554c9927511c17d7319e0c9a73291">SOCKBASE::send_all</a></div><div class="ttdeci">static bool send_all(int sock, const char *data, size_t size)</div><div class="ttdoc">Wysyłanie danych.</div><div class="ttdef"><b>Definition:</b> <a href="sockbase_8cpp_source.html#l00045">sockbase.cpp:45</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

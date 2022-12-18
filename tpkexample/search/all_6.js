@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['file_19',['file',['../structarguments.html#a5fd7bb10a3a495c358b143a8b01e7443',1,'arguments::file()'],['../struct_s_e_r_v_e_r_1_1_c_l_i_e_n_t.html#a46b8302d72827cfba2381027d09bf959',1,'SERVER::CLIENT::file()']]]
+  ['get_5fname_0',['get_name',['../class_s_o_c_k_b_a_s_e.html#a1bed341ace5336a5cfa1683929a3f497',1,'SOCKBASE']]]
 ];

@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['handler_21',['handler',['../main__s_8cpp.html#a08c3b0d52d0d97a0c49f13f40d2c5653',1,'main_s.cpp']]],
-  ['host_22',['host',['../structarguments.html#a3ce4b8ecd3059ce872cd12f26f02b0ca',1,'arguments']]]
+  ['is_5fconnected_0',['is_connected',['../class_c_l_i_e_n_t.html#a87f4e31468e224a1272f46216593515a',1,'CLIENT']]],
+  ['is_5fstarted_1',['is_started',['../class_s_e_r_v_e_r.html#ae712fad67aa4217bcf3d0336bba22915',1,'SERVER']]],
+  ['iterator_2',['ITERATOR',['../class_s_e_r_v_e_r.html#a7e8397fc05d51df984542a7b0a1c89fc',1,'SERVER']]]
 ];

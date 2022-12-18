@@ -1,7 +1,7 @@
 <map id="CLIENT::disconnect" name="CLIENT::disconnect">
-<area shape="rect" id="node1" title="Zamyka połączenie." alt="" coords="295,56,440,83"/>
-<area shape="rect" id="node2" href="$class_c_l_i_e_n_t.html#a783756fadeb1f24218acdee54bfb7b4a" title="Inicjacja połaczenia." alt="" coords="114,5,241,32"/>
-<area shape="rect" id="node4" href="$class_c_l_i_e_n_t.html#ad348ac551652139ec10b8598f72527c1" title="Pobieranie pliku." alt="" coords="108,56,247,83"/>
-<area shape="rect" id="node5" href="$class_c_l_i_e_n_t.html#a83c83556e186942b8d9c8b812a295454" title="Wysyłanie pliku." alt="" coords="118,107,237,133"/>
-<area shape="rect" id="node3" href="$main__c_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Funkcja główna programu klienta." alt="" coords="5,56,60,83"/>
+<area shape="rect" id="node1" title="Zamyka połączenie." alt="" coords="295,80,440,107"/>
+<area shape="rect" id="node2" href="$class_c_l_i_e_n_t.html#a783756fadeb1f24218acdee54bfb7b4a" title="Inicjacja połączenia." alt="" coords="114,29,241,56"/>
+<area shape="rect" id="node4" href="$class_c_l_i_e_n_t.html#ad348ac551652139ec10b8598f72527c1" title="Pobieranie pliku." alt="" coords="108,80,247,107"/>
+<area shape="rect" id="node5" href="$class_c_l_i_e_n_t.html#a83c83556e186942b8d9c8b812a295454" title="Wysyłanie pliku." alt="" coords="118,131,237,157"/>
+<area shape="rect" id="node3" href="$main__c_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Funkcja główna programu klienta." alt="" coords="5,80,60,107"/>
 </map>

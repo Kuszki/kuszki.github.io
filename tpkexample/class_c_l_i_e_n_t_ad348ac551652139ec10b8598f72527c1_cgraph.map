@@ -1,6 +1,6 @@
 <map id="CLIENT::download" name="CLIENT::download">
-<area shape="rect" id="node1" title="Pobieranie pliku." alt="" coords="5,31,144,57"/>
-<area shape="rect" id="node2" href="$class_c_l_i_e_n_t.html#a13a0cbc78ae543e0f6965a9c896b9562" title="Zamyka połączenie." alt="" coords="197,5,342,32"/>
-<area shape="rect" id="node4" href="$class_s_o_c_k_b_a_s_e.html#aefa554c9927511c17d7319e0c9a73291" title="Wysyłanie danych." alt="" coords="192,56,347,83"/>
-<area shape="rect" id="node3" href="$class_s_o_c_k_b_a_s_e.html#a188bbebe9b3f5ec16b0304b512da7c0f" title="Zamyka gniazdo." alt="" coords="395,5,529,32"/>
+<area shape="rect" id="node1" title="Pobieranie pliku." alt="" coords="5,55,144,81"/>
+<area shape="rect" id="node2" href="$class_c_l_i_e_n_t.html#a13a0cbc78ae543e0f6965a9c896b9562" title="Zamyka połączenie." alt="" coords="197,29,342,56"/>
+<area shape="rect" id="node4" href="$class_s_o_c_k_b_a_s_e.html#aefa554c9927511c17d7319e0c9a73291" title="Wysyłanie danych." alt="" coords="192,80,347,107"/>
+<area shape="rect" id="node3" href="$class_s_o_c_k_b_a_s_e.html#a188bbebe9b3f5ec16b0304b512da7c0f" title="Zamyka gniazdo." alt="" coords="395,29,529,56"/>
 </map>

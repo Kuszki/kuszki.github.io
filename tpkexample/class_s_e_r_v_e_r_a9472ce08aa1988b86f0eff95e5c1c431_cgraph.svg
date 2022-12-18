@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="class_s_e_r_v_e_r.html#ac73fc3f88eef2b1f8eabdb1a2b33a99b" target="_top" xlink:title="Obsługa rozłączenia klienta.">
+<g id="a_node2"><a xlink:href="class_s_e_r_v_e_r.html#ae95cc32343639f51220c1ebd5eb40722" target="_top" xlink:title="Obsługa rozłączenia klienta.">
 <polygon fill="none" stroke="black" points="148,-0.5 148,-19.5 279,-19.5 279,-0.5 148,-0.5"/>
 <text text-anchor="middle" x="213.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">SERVER::on_disconnect</text>
 </a>

@@ -1,4 +1,4 @@
 <map id="CLIENT::disconnect" name="CLIENT::disconnect">
-<area shape="rect" id="node1" title="Zamyka połączenie." alt="" coords="5,5,151,32"/>
-<area shape="rect" id="node2" href="$class_s_o_c_k_b_a_s_e.html#a188bbebe9b3f5ec16b0304b512da7c0f" title="Zamyka gniazdo." alt="" coords="199,5,333,32"/>
+<area shape="rect" id="node1" title="Zamyka połączenie." alt="" coords="5,29,151,56"/>
+<area shape="rect" id="node2" href="$class_s_o_c_k_b_a_s_e.html#a188bbebe9b3f5ec16b0304b512da7c0f" title="Zamyka gniazdo." alt="" coords="199,29,333,56"/>
 </map>

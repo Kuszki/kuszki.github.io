@@ -1,6 +1,6 @@
 <map id="CLIENT::upload" name="CLIENT::upload">
-<area shape="rect" id="node1" title="Wysyłanie pliku." alt="" coords="5,31,124,57"/>
-<area shape="rect" id="node2" href="$class_c_l_i_e_n_t.html#a13a0cbc78ae543e0f6965a9c896b9562" title="Zamyka połączenie." alt="" coords="177,5,322,32"/>
-<area shape="rect" id="node4" href="$class_s_o_c_k_b_a_s_e.html#aefa554c9927511c17d7319e0c9a73291" title="Wysyłanie danych." alt="" coords="172,56,327,83"/>
-<area shape="rect" id="node3" href="$class_s_o_c_k_b_a_s_e.html#a188bbebe9b3f5ec16b0304b512da7c0f" title="Zamyka gniazdo." alt="" coords="375,5,509,32"/>
+<area shape="rect" id="node1" title="Wysyłanie pliku." alt="" coords="5,55,124,81"/>
+<area shape="rect" id="node2" href="$class_c_l_i_e_n_t.html#a13a0cbc78ae543e0f6965a9c896b9562" title="Zamyka połączenie." alt="" coords="177,29,322,56"/>
+<area shape="rect" id="node4" href="$class_s_o_c_k_b_a_s_e.html#aefa554c9927511c17d7319e0c9a73291" title="Wysyłanie danych." alt="" coords="172,80,327,107"/>
+<area shape="rect" id="node3" href="$class_s_o_c_k_b_a_s_e.html#a188bbebe9b3f5ec16b0304b512da7c0f" title="Zamyka gniazdo." alt="" coords="375,29,509,56"/>
 </map>
