@@ -1,4 +1,4 @@
-# [Mgr inż. Łukasz Dróżdż](https://github.com/Kuszki)
+# [dr inż. Łukasz Dróżdż](https://github.com/Kuszki)
 
 Politechnika Śląska Wydział Elektryczny
 
@@ -46,12 +46,21 @@ Program umożliwiający tworzenie wykresów i analizę częstotliwościową wyge
 
 # Obszary działalności
 
+- Modelowanie właściwości metrologicznych torów pomiarowych.
+- Algorytmy przetwarzania danych pomiarowych.
 - Analiza geometryczna i logiczna geodezyjnych baz danych.
 - Tworzenie narzędzi do obsługi geodezyjnych baz danych.
 - Algorytmy sterowania wykorzystujące logikę rozmytą.
 - Programowanie urządzeń mikroprocesoroywch.
 - Cyfrowe przetwarzanie sygnałów.
 - Automatyka i algorytmy sterowania.
+
+# Tematyka naukowa
+
+- [Dorobek publikacyjny](https://omega.polsl.pl/info/author/PSL7ef5bbfeebe6495c9202189b2a9840f3)
+- [Profil ORCID](https://orcid.org/0000-0003-3157-9417)
+- [Profil Scopus](https://www.scopus.com/authid/detail.uri?authorId=23024501300)
+- [Rozprawa Doktorska](https://github.com/Kuszki/Phd)
 
 # Prezentacje projektów
 
@@ -68,3 +77,4 @@ Program umożliwiający tworzenie wykresów i analizę częstotliwościową wyge
 - [Roll-Example](https://github.com/Kuszki/PI-Roll-Example)
 - [Thread-Example](https://github.com/Kuszki/PI-Thread-Example)
 - [Fuzzy-Example](https://github.com/Kuszki/PI-Parallel-Fuzzy-Example)
+- [Uncertainty-Example](https://github.com/Kuszki/Octave-Uncertainty-RIA-Example)
